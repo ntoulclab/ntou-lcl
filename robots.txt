@@ -1,1 +1,1 @@
-Sitemap: /ntoulcl.github.io/sitemap.xml
+Sitemap: /sitemap.xml
