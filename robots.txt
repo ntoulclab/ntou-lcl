@@ -1,1 +1,1 @@
-Sitemap: /ntou-lcl.github.io/sitemap.xml
+Sitemap: /ntoulcl.github.io/sitemap.xml
