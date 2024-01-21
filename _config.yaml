@@ -1,5 +1,5 @@
 # site properties and page defaults
-title: ntoulclab
+title: Learning Control Lab 學習控制實驗室
 subtitle: 
 description: An engaging 1-3 sentence description of your lab.
 header: images/background.jpg
@@ -7,12 +7,12 @@ footer: images/background.jpg
 
 # site social media and other links
 links:
-  email: contact@ntoulclab.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
-  github: ntoulclab
-  twitter: ntoulclab
-  youtube: ntoulclab
+  email: mingli@mail.ntou.edu.tw
+  orcid: 0000-0002-2666-3940
+  google-scholar: 
+  github: 
+  twitter: 
+  youtube: 
 
 ### jekyll settings
 
