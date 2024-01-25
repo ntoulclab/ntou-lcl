@@ -1,5 +1,5 @@
 ---
-title: Members
+title: Member
 nav:
   order: 3
   tooltip: About our team
