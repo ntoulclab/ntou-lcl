@@ -68,7 +68,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   title="Our Team"
   text=text
 %}
--->
+
 {% endcapture %}
 
 {%
@@ -78,3 +78,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   flip=true
   text=text
 %}
+
+-->
