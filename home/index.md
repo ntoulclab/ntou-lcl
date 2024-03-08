@@ -69,3 +69,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   text=text
 %}
 -->
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/crazyflie.gif"
+  title=""
+  flip=true
+  text=text
+%}
