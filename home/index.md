@@ -24,7 +24,7 @@ This laboratory primarily focuses on research in the field of control engineerin
 {%
   include feature.html
   image="images/crazyflie.gif"
-  title="https://www.bitcraze.io/products/old-products/crazyflie-2-0/"
+  title=""
   flip=true
   text=text
 %}
