@@ -167,6 +167,36 @@ Mail: @mail.ntou.edu.tw
   text=text
 %}
 
+{% capture text %}
+年級: 碩一  
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/tin.jpg"
+  title="丁昱鈞 YU-JUN DING"
+  text=text
+%}
+
+
+{% capture text %}
+年級: 碩一  
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/mao.jpg"
+  title="胡惇貿 DUN-MAO HU"
+  text=text
+%}
+
+
 {% capture content %}
 
 
