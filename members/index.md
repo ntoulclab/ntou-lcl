@@ -191,7 +191,7 @@ Mail: @mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/mao.jpg"
+  image="images/mao2.jpg"
   title="胡惇貿 DUN-MAO HU"
   text=text
 %}
