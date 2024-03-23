@@ -50,7 +50,7 @@ Mail: 11053035@mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/hong.jpg"
   title="洪于策 Yu-Tse Hung"
   text=text
 %}
@@ -64,7 +64,7 @@ Mail: 11153012@mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/cheng.jpg"
   title="陳建謀 Jian-Mou Chen"
   text=text
 %}
@@ -78,7 +78,7 @@ Mail: 11153087@mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/apple.jpg"
   title="曾聖雅 Sheng-Ya Tseng"
   text=text
 %}
@@ -92,7 +92,7 @@ Mail: michael0922851688@gmail.com
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/su.jpg"
   title="蘇冠楷 Guan-Kai Su"
   text=text
 %}
@@ -106,8 +106,8 @@ Mail: 11253010@mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/photo.jpg"
-  title="李政霖 Zheng-Lin Li"
+  image="images/lee.jpg"
+  title="李政霖 Cheng-Lin Li"
   text=text
 %}
 
@@ -120,7 +120,7 @@ Mail: 11253037@mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/young.jpg"
   title="楊啓宏 Qi-Hong Yang"
   text=text
 %}
@@ -134,7 +134,7 @@ Mail: 11253039@mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/yh.jpg"
   title="江育翰 Yu-Han Jiang"
   text=text
 %}
@@ -148,7 +148,7 @@ Mail: 11253107@mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/chae.jpg"
   title="蔡宗佑 Zong-You Cai"
   text=text
 %}
