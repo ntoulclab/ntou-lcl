@@ -162,7 +162,7 @@ Mail: @mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/bo.jpg"
   title="陳柏帆 Bo-Fan Chen"
   text=text
 %}
