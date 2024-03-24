@@ -196,6 +196,78 @@ Mail: @mail.ntou.edu.tw
   text=text
 %}
 
+# {% include icon.html icon="fa-solid fa-users" %}Undergraduate Student
+
+{% capture text %}
+年級: 大三  
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/yea.jpg"
+  title="葉沛妤 PEI-YU YE"
+  text=text
+%}
+
+{% capture text %}
+年級: 大三    
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/hongp.jpg"
+  title="洪珮珈 PEI-JIA HONG"
+  text=text
+%}
+
+{% capture text %}
+年級: 大三   
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/cheao.jpg"
+  title="邱意婷 YI-TING QIU"
+  text=text
+%}
+
+{% capture text %}
+年級: 大三    
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/yung.jpg"
+  title="袁子婷 ZI-TING YUAN"
+  text=text
+%}
+
+{% capture text %}
+年級: 大三  
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/chang.jpg"
+  title="張士成 SHI-CHENG ZHANG"
+  text=text
+%}
+
 
 {% capture content %}
 
