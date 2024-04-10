@@ -154,7 +154,7 @@ Mail: 11253107@mail.ntou.edu.tw
 %}
 
 {% capture text %}
-年級: 碩一  
+年級: 碩0  
 
 Mail: @mail.ntou.edu.tw
 
@@ -168,7 +168,7 @@ Mail: @mail.ntou.edu.tw
 %}
 
 {% capture text %}
-年級: 碩一  
+年級: 碩0  
 
 Mail: @mail.ntou.edu.tw
 
