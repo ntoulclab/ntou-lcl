@@ -1,59 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>/ntou-lcl/members/jane-smith.html</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
+  <loc>https://ntoulclab.github.io/ntou-lcl/</loc>
+  <lastmod>2024-07-03T04:56:26+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>/ntou-lcl/members/john-doe.html</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
+  <loc>https://ntoulclab.github.io/ntou-lcl/home/</loc>
+  <lastmod>2024-07-03T04:56:26+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/ntou-lcl/members/sarah-johnson.html</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
+  <loc>https://ntoulclab.github.io/ntou-lcl/research/</loc>
+  <lastmod>2024-07-03T04:56:26+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/ntou-lcl/2019/01/07/example-post-1.html</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
+  <loc>https://ntoulclab.github.io/ntou-lcl/members/</loc>
+  <lastmod>2024-07-03T04:56:26+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/ntou-lcl/2021/09/30/example-post-2.html</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
+  <loc>https://ntoulclab.github.io/ntou-lcl/Publication/</loc>
+  <lastmod>2024-07-03T04:56:26+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/ntou-lcl/2023/02/23/example-post-3.html</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
+  <loc>https://ntoulclab.github.io/ntou-lcl/activity/</loc>
+  <lastmod>2024-07-03T04:56:26+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>/ntou-lcl/research/</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
+  <loc>https://ntoulclab.github.io/ntou-lcl/contact/</loc>
+  <lastmod>2024-07-03T04:56:26+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
-<url>
-<loc>/ntou-lcl/contact/</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
-</url>
-<url>
-<loc>/ntou-lcl/Publication/</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
-</url>
-<url>
-<loc>/ntou-lcl/home/</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
-</url>
-<url>
-<loc>/ntou-lcl/members/</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
-</url>
-<url>
-<loc>/ntou-lcl/activity/</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
-</url>
-<url>
-<loc>/ntou-lcl/</loc>
-<lastmod>2024-07-03T04:54:31+00:00</lastmod>
-</url>
-<url>
-<loc>/ntou-lcl/google5f4bc38279edfa14.html</loc>
-<lastmod>2024-07-03T04:55:07+00:00</lastmod>
-</url>
+
+
 </urlset>
