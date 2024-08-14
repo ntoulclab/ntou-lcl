@@ -177,7 +177,7 @@ Mail: @mail.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/li.jpg"
+  image="images/li2.jpg"
   title="李登峰 DENG-FENG LI"
   text=text
 %}
