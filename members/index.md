@@ -37,37 +37,10 @@ Email: mingli@mail.ntou.edu.tw
 
 
 
-# {% include icon.html icon="fa-solid fa-users" %}Graduate Student
+# {% include icon.html icon="fa-solid fa-users" %}​MASTER STUDENTS
 
 {% include section.html %}
 
-{% capture text %}
-年級: 碩二  
-
-Mail: 11053035@mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hong.jpg"
-  title="洪于策 Yu-Tse Hung"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩二  
-
-Mail: 11153012@mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/cheng.jpg"
-  title="陳建謀 Jian-Mou Chen"
-  text=text
-%}
 
 {% capture text %}
 年級: 碩二  
@@ -84,7 +57,7 @@ Mail: 11153087@mail.ntou.edu.tw
 %}
 
 {% capture text %}
-年級: 碩一  
+年級: 碩二  
 
 Mail: michael0922851688@gmail.com
 
@@ -98,7 +71,7 @@ Mail: michael0922851688@gmail.com
 %}
 
 {% capture text %}
-年級: 碩一  
+年級: 碩二  
 
 Mail: 11253010@mail.ntou.edu.tw
 
@@ -112,7 +85,7 @@ Mail: 11253010@mail.ntou.edu.tw
 %}
 
 {% capture text %}
-年級: 碩一  
+年級: 碩二  
 
 Mail: 11253037@mail.ntou.edu.tw
 
@@ -126,7 +99,7 @@ Mail: 11253037@mail.ntou.edu.tw
 %}
 
 {% capture text %}
-年級: 碩一  
+年級: 碩二  
 
 Mail: 11253039@mail.ntou.edu.tw
 
@@ -140,7 +113,7 @@ Mail: 11253039@mail.ntou.edu.tw
 %}
 
 {% capture text %}
-年級: 碩一  
+年級: 碩二  
 
 Mail: 11253107@mail.ntou.edu.tw
 
@@ -154,7 +127,21 @@ Mail: 11253107@mail.ntou.edu.tw
 %}
 
 {% capture text %}
-年級: 碩0  
+年級: 碩二 
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/mao2.jpg"
+  title="胡惇貿 DUN-MAO HU"
+  text=text
+%}
+
+{% capture text %}
+年級: 碩一  
 
 Mail: @mail.ntou.edu.tw
 
@@ -168,7 +155,7 @@ Mail: @mail.ntou.edu.tw
 %}
 
 {% capture text %}
-年級: 碩0  
+年級: 碩一  
 
 Mail: @mail.ntou.edu.tw
 
@@ -182,21 +169,9 @@ Mail: @mail.ntou.edu.tw
 %}
 
 
-{% capture text %}
-年級: 碩一  
 
-Mail: @mail.ntou.edu.tw
 
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/mao2.jpg"
-  title="胡惇貿 DUN-MAO HU"
-  text=text
-%}
-
-# {% include icon.html icon="fa-solid fa-users" %}Undergraduate Student
+# {% include icon.html icon="fa-solid fa-users" %}Undergraduate Students
 
 {% capture text %}
 年級: 大三  
@@ -267,6 +242,50 @@ Mail: @mail.ntou.edu.tw
   title="張士成 SHI-CHENG ZHANG"
   text=text
 %}
+# {% include icon.html icon="fa-solid fa-users" %}Alumni
+
+{% capture text %}  
+
+Mail: 11053035@mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/hong.jpg"
+  title="洪于策 Yu-Tse Hung"
+  text=text
+%}
+
+{% capture text %}
+
+Mail: 11153012@mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/cheng.jpg"
+  title="陳建謀 Jian-Mou Chen"
+  text=text
+%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 {% capture content %}
