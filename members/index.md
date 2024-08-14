@@ -168,8 +168,47 @@ Mail: @mail.ntou.edu.tw
   text=text
 %}
 
+{% capture text %}
+年級: 碩一  
 
+Mail: @mail.ntou.edu.tw
 
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/li.jpg"
+  title="李登峰 DENG-FENG LI"
+  text=text
+%}
+
+{% capture text %}
+年級: 碩一  
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/lin.jpg"
+  title="林易廷 YI-TING LIN"
+  text=text
+%}
+
+{% capture text %}
+年級: 碩一  
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/huang.jpg"
+  title="黃冠霖 GUAN-LIN HUANG"
+  text=text
+%}
 
 # {% include icon.html icon="fa-solid fa-users" %}Undergraduate Students
 
