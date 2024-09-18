@@ -37,7 +37,7 @@ Email: mingli@mail.ntou.edu.tw
 
 
 
-# {% include icon.html icon="fa-solid fa-users" %}​MASTER STUDENTS
+# {% include icon.html icon="fa-solid fa-users" %}​Master Students
 
 {% include section.html %}
 
@@ -209,6 +209,56 @@ Mail: @mail.ntou.edu.tw
   title="黃冠霖 GUAN-LIN HUANG"
   text=text
 %}
+
+
+# {% include icon.html icon="fa-solid fa-users" %}​In-service Master Students
+
+{% include section.html %}
+
+
+{% capture text %}
+年級:在職碩一  
+
+Mail: kaitlyshawnrt@gmail.com
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/apple.jpg"
+  title="鍾文幀"
+  text=text
+%}
+
+{% capture text %}
+年級:在職碩一  
+
+Mail: junesixteen25@gmail.com
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/apple.jpg"
+  title="陳羿宏"
+  text=text
+%}
+
+{% capture text %}
+年級:在職碩一  
+
+Mail: j0988251682@gmail.com
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/apple.jpg"
+  title="李至偉"
+  text=text
+%}
+
+
+
 
 # {% include icon.html icon="fa-solid fa-users" %}Undergraduate Students
 
