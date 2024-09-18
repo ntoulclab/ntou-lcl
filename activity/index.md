@@ -1,5 +1,5 @@
 ---
-title: Activity
+title: News
 nav:
   order: 5
   tooltip: Musings and miscellany
