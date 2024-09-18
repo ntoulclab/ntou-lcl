@@ -1,29 +1,18 @@
-<!--
 ---
-title: Projects
+title: Activity
 nav:
-  order: 2
-  tooltip: Software, datasets, and more
+  order: 6
+  tooltip: Musings and miscellany
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-feather-pointed" %}Activity
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+## 2023/06/11 2023 中華民國系統科學與工程研討會(NSSSE 2023)
 
-{% include tags.html tags="publication, resource, website" %}
+## 2023/08/30~2023/09/01 第11屆臺灣智慧型機器人研討會 (NCAR 2023)
 
-{% include search-info.html %}
+## 2024/06/26~2024/06/28 國際系統科學與工程研討會(ICSSE 2024)
 
-{% include section.html %}
+## 2024/07/08~2024/07/12 American Control Conference(ACC 2024)
 
-## Featured
-
-{% include list.html component="card" data="projects" filters="group: featured" %}
-
-{% include section.html %}
-
-## More
-
-{% include list.html component="card" data="projects" filters="group: " style="small" %}
--->
+## 2024/08/22~2024/08/24 INTERNATIONAL CONFERENCE ON ADVANCED ROBOTICS AND INTELLIGENT SYSTEMS(ARIS 2024)
