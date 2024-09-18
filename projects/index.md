@@ -18,5 +18,5 @@ nav:
   title=""
   flip=true
   text=text
-  width="500px"
+  width="1000px"
 %}
