@@ -5,7 +5,7 @@ nav:
   tooltip: Musings and miscellany
 ---
 
-# {% include icon.html icon="fa-solid fa-feather-pointed" %}Activity
+# {% include icon.html icon="fa-solid fa-feather-pointed" %}News
 
 ## 2023/06/11 2023 中華民國系統科學與工程研討會(NSSSE 2023)
 
