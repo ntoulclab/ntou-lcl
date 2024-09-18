@@ -129,7 +129,7 @@ Mail: 11253107@mail.ntou.edu.tw
 {% capture text %}
 年級: 碩二 
 
-Mail: @mail.ntou.edu.tw
+Mail: mouei0906@gmail.com
 
 {% endcapture %}
 
@@ -143,7 +143,7 @@ Mail: @mail.ntou.edu.tw
 {% capture text %}
 年級: 碩一  
 
-Mail: @mail.ntou.edu.tw
+Mail: 401005brian@gmail.com
 
 {% endcapture %}
 
@@ -157,7 +157,7 @@ Mail: @mail.ntou.edu.tw
 {% capture text %}
 年級: 碩一  
 
-Mail: @mail.ntou.edu.tw
+Mail: 11353003@email.ntou.edu.tw
 
 {% endcapture %}
 
@@ -171,7 +171,7 @@ Mail: @mail.ntou.edu.tw
 {% capture text %}
 年級: 碩一  
 
-Mail: @mail.ntou.edu.tw
+Mail: A24669855@gmail.com
 
 {% endcapture %}
 
@@ -185,7 +185,7 @@ Mail: @mail.ntou.edu.tw
 {% capture text %}
 年級: 碩一  
 
-Mail: @mail.ntou.edu.tw
+Mail: Zed10487@gmail.com
 
 {% endcapture %}
 
@@ -199,7 +199,7 @@ Mail: @mail.ntou.edu.tw
 {% capture text %}
 年級: 碩一  
 
-Mail: @mail.ntou.edu.tw
+Mail: 11353007@mail.ntou.edu.tw
 
 {% endcapture %}
 
@@ -210,7 +210,33 @@ Mail: @mail.ntou.edu.tw
   text=text
 %}
 
+{% capture text %}
+年級: 碩一  
 
+Mail: somewhitedie@gmail.com
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/tin.jpg"
+  title="戴廷宇 TING-YU DAI"
+  text=text
+%}
+
+{% capture text %}
+年級: 碩一  
+
+Mail: @mail.ntou.edu.tw
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/white.jpg"
+  title="胡安亞 ANAYAT"
+  text=text
+%}
 # {% include icon.html icon="fa-solid fa-users" %}​In-service Master Students
 
 {% include section.html %}
@@ -225,8 +251,8 @@ Mail: kaitlyshawnrt@gmail.com
 
 {%
   include feature.html
-  image="images/apple.jpg"
-  title="鍾文幀"
+  image="images/kwen.jpg"
+  title="鍾文幀 WEN-ZHENG ZHONG"
   text=text
 %}
 
@@ -238,8 +264,8 @@ Mail: junesixteen25@gmail.com
 
 {%
   include feature.html
-  image="images/apple.jpg"
-  title="陳羿宏"
+  image="images/white.jpg"
+  title="陳羿宏 YI-HONG CHEN"
   text=text
 %}
 
@@ -252,8 +278,8 @@ Mail: j0988251682@gmail.com
 
 {%
   include feature.html
-  image="images/apple.jpg"
-  title="李至偉"
+  image="images/white.jpg"
+  title="李至偉 ZHI-WEI LI"
   text=text
 %}
 
