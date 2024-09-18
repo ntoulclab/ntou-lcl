@@ -163,7 +163,7 @@ Mail: 11353003@email.ntou.edu.tw
 
 {%
   include feature.html
-  image="images/tin.jpg"
+  image="images/TINTU.jpg"
   title="丁昱鈞 YU-JUN DING"
   text=text
 %}
