@@ -15,8 +15,5 @@ nav:
 {%
   include feature.html
   image="images/moon.jpg"
-  title=""
-  flip=true
-  text=text
   width="1000px"
 %}
