@@ -264,7 +264,7 @@ Mail: junesixteen25@gmail.com
 
 {%
   include feature.html
-  image="images/white.jpg"
+  image="images/CY.jpg"
   title="陳羿宏 YI-HONG CHEN"
   text=text
 %}
@@ -278,7 +278,7 @@ Mail: j0988251682@gmail.com
 
 {%
   include feature.html
-  image="images/white.jpg"
+  image="images/JASON.jpg"
   title="李至偉 ZHI-WEI LI"
   text=text
 %}
