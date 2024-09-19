@@ -15,5 +15,6 @@ nav:
 {%
   include feature.html
   image="images/moon.jpg"
+  image="images/moon2.jpg"
   style="font-size: 2em; width: 300%;"
 %}
