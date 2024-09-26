@@ -46,6 +46,7 @@ Email: mingli@mail.ntou.edu.tw
   include figure.html
   image="images/apple.jpg"
   caption="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
+  style="width: 300px; height: 300px; object-fit: cover;"
 %}
 {% endcapture %}
 
@@ -54,6 +55,7 @@ Email: mingli@mail.ntou.edu.tw
   include figure.html
   image="images/su.jpg"
   caption="蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com"
+  style="width: 300px; height: 300px; object-fit: cover;"
 %}
 {% endcapture %}
 
@@ -62,6 +64,7 @@ Email: mingli@mail.ntou.edu.tw
   include figure.html
   image="images/lee.jpg"
   caption="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
+  style="width: 300px; height: 300px; object-fit: cover;"
 %}
 {% endcapture %}
 
