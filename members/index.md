@@ -40,6 +40,50 @@ Email: mingli@mail.ntou.edu.tw
 # {% include icon.html icon="fa-solid fa-users" %}​Master Students
 ## 碩二
 
+{% assign images = 
+  [
+    { "image": "images/apple.jpg", "caption": "曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw" },
+    { "image": "images/su.jpg", "caption": "蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com" },
+    { "image": "images/lee.jpg", "caption": "李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw" },
+    { "image": "images/apple.jpg", "caption": "Extra User 1<br>Mail: extra1@example.com" },
+    { "image": "images/su.jpg", "caption": "Extra User 2<br>Mail: extra2@example.com" }
+  ]
+%}
+
+{% assign cols = "" %}
+{% assign items_per_row = 3 %}
+{% assign counter = 0 %}
+
+{% for item in images %}
+  {% if counter == 0 %}
+    <div class="row" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  {% endif %}
+  
+  {% capture col %}
+    <div style="flex: 1; margin: 10px;">
+      {% include figure.html 
+        image=item.image
+        caption=item.caption
+        style="width: 100px !important; height: 100px !important; object-fit: cover !important;"
+      %}
+    </div>
+  {% endcapture %}
+  
+  {% assign cols = cols | append: col %}
+  {% assign counter = counter | plus: 1 %}
+
+  {% if counter == items_per_row %}
+    {{ cols }}
+    </div> <!-- 關閉 row -->
+    {% assign counter = 0 %}
+    {% assign cols = "" %}
+  {% endif %}
+{% endfor %}
+
+{% if counter > 0 %}
+  {{ cols }}
+  </div> <!-- 關閉最後未完成的 row -->
+{% endif %}
 
 {% capture col1 %}
 {%
@@ -70,22 +114,6 @@ Email: mingli@mail.ntou.edu.tw
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
-{% assign images = 
-  [
-    { "image": "images/apple.jpg", "title": "曾聖雅 Sheng-Ya Tseng", "text": "Mail: 11153087@mail.ntou.edu.tw" },
-    { "image": "images/su.jpg", "title": "蘇冠楷 Guan-Kai Su", "text": "Mail: michael0922851688@gmail.com" },
-    { "image": "images/lee.jpg", "title": "李政霖 Cheng-Lin Li", "text": "Mail: 11253010@mail.ntou.edu.tw" }
-  ]
-%}
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-  {% for item in images %}
-    {% include feature.html 
-      image=item.image
-      title=item.title
-      text=item.text
-    %}
-  {% endfor %}
-</div>
 
 {% capture text %}
 年級: 碩二  
