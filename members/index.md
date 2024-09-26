@@ -26,7 +26,7 @@ Email: mingli@mail.ntou.edu.tw
 {% endcapture %}
 
 {%
-  include feature.html
+  include professor.html
   image="images/mingli.jpg"
   title="江明理 Ming-Li Chiang, Ph.D."
   text=text
