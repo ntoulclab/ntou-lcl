@@ -42,7 +42,7 @@ Email: mingli@mail.ntou.edu.tw
 {% include section.html %}
 
 {% capture col1 %}
-  {%
+{%
   include figure.html
   image="images/apple.jpg"
   caption="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
@@ -60,7 +60,7 @@ Email: mingli@mail.ntou.edu.tw
 {% endcapture %}
 {%
 {% capture col3 %}
-
+{%
   include figure.html
   image="images/lee.jpg"
   caption="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
