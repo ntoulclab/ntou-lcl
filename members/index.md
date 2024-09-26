@@ -38,51 +38,34 @@ Email: mingli@mail.ntou.edu.tw
 
 
 # {% include icon.html icon="fa-solid fa-users" %}​Master Students
-
+## 碩二
 {% include section.html %}
 
-
-{% capture text %}
-年級: 碩二  
-
-Mail: 11153087@mail.ntou.edu.tw
-
-{% endcapture %}
-
+{% capture col1 %}
 {%
-  include feature.html
+  include figure.html
   image="images/apple.jpg"
-  title="曾聖雅 Sheng-Ya Tseng"
-  text=text
+  caption="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
 %}
-
-{% capture text %}
-年級: 碩二  
-
-Mail: michael0922851688@gmail.com
-
 {% endcapture %}
 
+{% capture col2 %}
 {%
-  include feature.html
+  include figure.html
   image="images/su.jpg"
-  title="蘇冠楷 Guan-Kai Su"
-  text=text
+  caption="蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com"
 %}
-
-{% capture text %}
-年級: 碩二  
-
-Mail: 11253010@mail.ntou.edu.tw
-
 {% endcapture %}
 
+{% capture col3 %}
 {%
-  include feature.html
+  include figure.html
   image="images/lee.jpg"
-  title="李政霖 Cheng-Lin Li"
-  text=text
+  caption="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
 %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 {% capture text %}
 年級: 碩二  
