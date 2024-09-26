@@ -52,13 +52,13 @@ Email: mingli@mail.ntou.edu.tw
 
 {% capture col2 %}
 {%
- include figure.html
+  include figure.html
   image="images/su.jpg"
   caption="蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com"
   style="width: 100px !important; height: 100px !important; object-fit: cover !important;"
 %}
 {% endcapture %}
-{%
+
 {% capture col3 %}
 {%
   include figure.html
