@@ -1,4 +1,4 @@
-.feature {
+.professor {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,44 +6,44 @@
   margin: 40px 0;
 }
 
-.feature-image {
+.professor-image {
   flex-shrink: 0;
-  width: 40%;
-  aspect-ratio: 3/2;
+  width: 30%;
+  aspect-ratio: 2/3;
   border-radius: var(--rounded);
   overflow: hidden;
   box-shadow: var(--shadow);
 }
 
-.feature-image img {
+.professor-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
-.feature-text {
+.professor-text {
   flex-grow: 1;
 }
 
-.feature-title {
+.professor-title {
   font-size: var(--large);
   text-align: center;
   font-family: var(--heading);
   font-weight: var(--semi-bold);
 }
 
-.feature[data-flip] {
+.professor[data-flip] {
   flex-direction: row-reverse;
 }
 
 @media (max-width: 800px) {
-  .feature {
+  .professor {
     flex-direction: column !important;
   }
-  .feature-image {
-    width: unset;
-    max-width: 400px;
+  .professor-image {
+    width: 30%;
+    max-width: 0.6666666667;
   }
 }
 
-/*# sourceMappingURL=feature.css.map */
+/*# sourceMappingURL=professor.css.map */
