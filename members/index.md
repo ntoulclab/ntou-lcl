@@ -39,23 +39,7 @@ Email: mingli@mail.ntou.edu.tw
 
 # {% include icon.html icon="fa-solid fa-users" %}​Master Students
 ## 碩二
-{% include section.html %}
-<table align="center" class="image" width="100%" style="border:0px solid white; width:100%;">
-  <tr style="border: 0px;">        
-    <td width="33%" style="border:0px; width:33.33%; text-align: center;">
-        <img src="/images/apple.jpg" style="width: 100px; height: 100px; object-fit: cover;" />
-        <br/> 曾聖雅 Sheng-Ya Tseng<br/>Mail: 11153087@mail.ntou.edu.tw
-    </td>        
-    <td width="33%" style="border:0px; width:33.33%; text-align: center;">
-        <img src="/images/su.jpg" style="width: 100px; height: 100px; object-fit: cover;" />
-        <br/> 蘇冠楷 Guan-Kai Su<br/>Mail: michael0922851688@gmail.com
-    </td>       
-    <td width="33%" style="border:0px; width:33.33%; text-align: center;">
-        <img src="/images/lee.jpg" style="width: 100px; height: 100px; object-fit: cover;" />
-        <br/> 李政霖 Cheng-Lin Li<br/>Mail: 11253010@mail.ntou.edu.tw
-    </td>       
-  </tr>
-</table>
+
 
 {% capture col1 %}
 {%
@@ -86,6 +70,40 @@ Email: mingli@mail.ntou.edu.tw
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
+{% capture text1 %}
+年級: 碩二  
+Mail: 11153087@mail.ntou.edu.tw
+{% endcapture %}
+
+{% capture text2 %}
+年級: 碩一  
+Mail: michael0922851688@gmail.com
+{% endcapture %}
+
+{% capture text3 %}
+年級: 碩三  
+Mail: 11253010@mail.ntou.edu.tw
+{% endcapture %}
+
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  {% include feature.html
+    image="images/chae.jpg"
+    title="蔡宗佑 Zong-You Cai"
+    text=text1
+  %}
+
+  {% include feature.html
+    image="images/su.jpg"
+    title="蘇冠楷 Guan-Kai Su"
+    text=text2
+  %}
+
+  {% include feature.html
+    image="images/lee.jpg"
+    title="李政霖 Cheng-Lin Li"
+    text=text3
+  %}
+</div>
 
 {% capture text %}
 年級: 碩二  
