@@ -4,11 +4,8 @@ nav:
   order: 3
   tooltip: About our team
 ---
-
-# {% include icon.html icon="fa-solid fa-users" %}Principal Investigator
-
-
 {% include section.html %}
+# {% include icon.html icon="fa-solid fa-users" %}Principal Investigator
 
 {% capture text %}
 助理教授
@@ -36,407 +33,54 @@ Email: mingli@mail.ntou.edu.tw
 %}
 
 
-
+<!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}​Master Students
 ## 碩二
+{% assign images = "images/apple.jpg|images/su.jpg|images/lee.jpg|images/young.jpg|images/yh.jpg|images/chae.jpg|images/mao2.jpg" | split: "|" %}
+{% assign names = "曾聖雅 Sheng-Ya Tseng|蘇冠楷 Guan-Kai Su|李政霖 Cheng-Lin Li|楊啓宏 Qi-Hong Yang|江育翰 Yu-Han Jiang|蔡宗佑 Zong-You Cai|胡惇貿 DUN-MAO HU" | split: "|" %}
+{% assign emails = "11153087@mail.ntou.edu.tw|michael0922851688@gmail.com|11253010@mail.ntou.edu.tw|11253037@mail.ntou.edu.tw|11253039@mail.ntou.edu.tw|11253107@mail.ntou.edu.tw|mouei0906@gmail.com" | split: "|" %}
+{% include image-grid.html %}
 
-{% assign images = 
-  [
-    { "image": "images/apple.jpg", "caption": "曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw" },
-    { "image": "images/su.jpg", "caption": "蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com" },
-    { "image": "images/lee.jpg", "caption": "李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw" },
-    { "image": "images/apple.jpg", "caption": "Extra User 1<br>Mail: extra1@example.com" },
-    { "image": "images/su.jpg", "caption": "Extra User 2<br>Mail: extra2@example.com" }
-  ]
-%}
+## 碩一
+{% assign images = "images/bo.jpg|images/TINTU.jpg|images/li2.jpg|images/lin.jpg|images/huang.jpg|images/tin.jpg|images/white.jpg" | split: "|" %}
 
-{% assign cols = "" %}
-{% assign items_per_row = 3 %}
-{% assign counter = 0 %}
+{% assign names = "陳柏帆 Bo-Fan Chen|丁昱鈞 YU-JUN DING|李登峰 DENG-FENG LI|林易廷 YI-TING LIN|黃冠霖 GUAN-LIN HUANG|戴廷宇 TING-YU DAI|胡安亞 ANAYAT" | split: "|" %}
 
-{% for item in images %}
-  {% if counter == 0 %}
-    <div class="row" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-  {% endif %}
-  
-  {% capture col %}
-    <div style="flex: 1; margin: 10px;">
-      {% include figure.html 
-        image=item.image
-        caption=item.caption
-        style="width: 100px !important; height: 100px !important; object-fit: cover !important;"
-      %}
-    </div>
-  {% endcapture %}
-  
-  {% assign cols = cols | append: col %}
-  {% assign counter = counter | plus: 1 %}
+{% assign emails = "401005brian@gmail.com|11353003@email.ntou.edu.tw|A24669855@gmail.com|Zed10487@gmail.com|11353007@mail.ntou.edu.tw|somewhitedie@gmail.com|@mail.ntou.edu.tw" | split: "|" %}
+{% include image-grid.html %}
 
-  {% if counter == items_per_row %}
-    {{ cols }}
-    </div> <!-- 關閉 row -->
-    {% assign counter = 0 %}
-    {% assign cols = "" %}
-  {% endif %}
-{% endfor %}
-
-{% if counter > 0 %}
-  {{ cols }}
-  </div> <!-- 關閉最後未完成的 row -->
-{% endif %}
-
-{% capture col1 %}
-{%
-  include figure.html
-  image="images/apple.jpg"
-  caption="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
-  style="width: 100px !important; height: 100px !important; object-fit: cover !important;"
-%}
-{% endcapture %}
-
-{% capture col2 %}
-{%
-  include figure.html
-  image="images/su.jpg"
-  caption="蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com"
-  style="width: 100px !important; height: 100px !important; object-fit: cover !important;"
-%}
-{% endcapture %}
-
-{% capture col3 %}
-{%
-  include figure.html
-  image="images/lee.jpg"
-  caption="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
-  style="margin: 10px, width: 100px !important; height: 100px !important; object-fit: cover !important;"
-%}
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}
-
-
-{% capture text %}
-年級: 碩二  
-
-Mail: 11253037@mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/young.jpg"
-  title="楊啓宏 Qi-Hong Yang"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩二  
-
-Mail: 11253039@mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/yh.jpg"
-  title="江育翰 Yu-Han Jiang"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩二  
-
-Mail: 11253107@mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/chae.jpg"
-  title="蔡宗佑 Zong-You Cai"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩二 
-
-Mail: mouei0906@gmail.com
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/mao2.jpg"
-  title="胡惇貿 DUN-MAO HU"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩一  
-
-Mail: 401005brian@gmail.com
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/bo.jpg"
-  title="陳柏帆 Bo-Fan Chen"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩一  
-
-Mail: 11353003@email.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/TINTU.jpg"
-  title="丁昱鈞 YU-JUN DING"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩一  
-
-Mail: A24669855@gmail.com
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/li2.jpg"
-  title="李登峰 DENG-FENG LI"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩一  
-
-Mail: Zed10487@gmail.com
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/lin.jpg"
-  title="林易廷 YI-TING LIN"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩一  
-
-Mail: 11353007@mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/huang.jpg"
-  title="黃冠霖 GUAN-LIN HUANG"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩一  
-
-Mail: somewhitedie@gmail.com
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/tin.jpg"
-  title="戴廷宇 TING-YU DAI"
-  text=text
-%}
-
-{% capture text %}
-年級: 碩一  
-
-Mail: @mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/white.jpg"
-  title="胡安亞 ANAYAT"
-  text=text
-%}
+<!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}​In-service Master Students
+=
+{% assign images = "images/kwen.jpg|images/CY.jpg|images/JASON.jpg" | split: "|" %}
 
-{% include section.html %}
-
-
-{% capture text %}
-年級:在職碩一  
-
-Mail: kaitlyshawnrt@gmail.com
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/kwen.jpg"
-  title="鍾文幀 WEN-ZHENG ZHONG"
-  text=text
-%}
-
-{% capture text %}
-年級:在職碩一  
-
-Mail: junesixteen25@gmail.com
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/CY.jpg"
-  title="陳羿宏 YI-HONG CHEN"
-  text=text
-%}
-
-{% capture text %}
-年級:在職碩一  
-
-Mail: j0988251682@gmail.com
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/JASON.jpg"
-  title="李至偉 ZHI-WEI LI"
-  text=text
-%}
+{% assign names = "鍾文幀 WEN-ZHENG ZHONG|陳羿宏 YI-HONG CHEN|李至偉 ZHI-WEI LI" | split: "|" %}
 
 
-
-
+{% assign emails = "kaitlyshawnrt@gmail.com|junesixteen25@gmail.com|j0988251682@gmail.com" | split: "|" %}
+{% include image-grid.html %}
+<!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}Undergraduate Students
 
-{% capture text %}
-年級: 大三  
+{% assign images = "images/yea.jpg|images/hongp.jpg|images/cheao.jpg|images/yung.jpg|images/chang.jpg" | split: "|" %}
 
-Mail: @mail.ntou.edu.tw
+{% assign names = "葉沛妤 PEI-YU YE|洪珮珈 PEI-JIA HONG|邱意婷 YI-TING QIU|袁子婷 ZI-TING YUAN|張士成 SHI-CHENG ZHANG" | split: "|" %}
 
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/yea.jpg"
-  title="葉沛妤 PEI-YU YE"
-  text=text
-%}
-
-{% capture text %}
-年級: 大三    
-
-Mail: @mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hongp.jpg"
-  title="洪珮珈 PEI-JIA HONG"
-  text=text
-%}
-
-{% capture text %}
-年級: 大三   
-
-Mail: @mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/cheao.jpg"
-  title="邱意婷 YI-TING QIU"
-  text=text
-%}
-
-{% capture text %}
-年級: 大三    
-
-Mail: @mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/yung.jpg"
-  title="袁子婷 ZI-TING YUAN"
-  text=text
-%}
-
-{% capture text %}
-年級: 大三  
-
-Mail: @mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/chang.jpg"
-  title="張士成 SHI-CHENG ZHANG"
-  text=text
-%}
+{% assign emails = "@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw" | split: "|" %}
+{% include image-grid.html %}
+<!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}Alumni
 
-{% capture text %}  
+{% assign images = "images/hong.jpg|images/cheng.jpg" | split: "|" %}
 
-Mail: 11053035@mail.ntou.edu.tw
+{% assign names = "洪于策 Yu-Tse Hung|陳建謀 Jian-Mou Chen" | split: "|" %}
 
-{% endcapture %}
+{% assign emails = "11053035@mail.ntou.edu.tw|11153012@mail.ntou.edu.tw" | split: "|" %}
+{% include image-grid.html %}
 
-{%
-  include feature.html
-  image="images/hong.jpg"
-  title="洪于策 Yu-Tse Hung"
-  text=text
-%}
-
-{% capture text %}
-
-Mail: 11153012@mail.ntou.edu.tw
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/cheng.jpg"
-  title="陳建謀 Jian-Mou Chen"
-  text=text
-%}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% capture content %}
+<!-- {% capture content %}
 
 
 {% endcapture %}
 
-{% include grid.html style="square" content=content %}
+{% include grid.html style="square" content=content %} -->

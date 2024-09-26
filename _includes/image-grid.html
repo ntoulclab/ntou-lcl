@@ -1,0 +1,54 @@
+<style>
+    /* 控制每個圖片區塊的基本樣式 */
+    .image-grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px; /* 圖片之間的間距 */
+    }
+  
+    .image-grid-item {
+      flex-basis: calc(25% - 20px); /* 每行4個 */
+      text-align: center;
+    }
+  
+    /* 當視窗變窄時，自動變為每行3個 */
+    @media (max-width: 1024px) {
+      .image-grid-item {
+        flex-basis: calc(33.33% - 20px); /* 每行3個 */
+      }
+    }
+  
+    /* 當視窗變得更窄時，變為每行2個 */
+    @media (max-width: 768px) {
+      .image-grid-item {
+        flex-basis: calc(50% - 20px); /* 每行2個 */
+      }
+    }
+  
+    /* 當視窗最窄時，變為每行1個 */
+    @media (max-width: 480px) {
+      .image-grid-item {
+        flex-basis: calc(100% - 20px); /* 每行1個 */
+      }
+    }
+  </style>
+  
+  <div class="image-grid-container">
+    {% assign total_items = images.size %}
+    {% assign size = total_items | minus: 1 %}
+    {% for i in (0..size ) %}
+      <div class="image-grid-item">
+        {% assign image = images[i] %}
+        {% assign name = names[i] %}
+        {% assign email = emails[i] %}
+        <!-- 合併 name 和 email 到 caption 中 -->
+        {% assign caption = "<strong>" | append: name | append: "</strong><br>" | append: email %}
+        {% include figure.html
+          image=image
+          caption=caption
+          style="width: 100%; height: auto; object-fit: cover;"
+        %}
+      </div>
+    {% endfor %}
+  </div>
