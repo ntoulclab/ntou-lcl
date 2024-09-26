@@ -52,15 +52,15 @@ Email: mingli@mail.ntou.edu.tw
 <table align="center" class="image" width="100%" style="border:0px solid white; width:100%;">
   <tr style="border: 0px;">        
     <td width="33%" style="border:0px; width:33.33%; text-align: center;">
-        <img src="images/apple.jpg" style="width: 100px; height: 100px; object-fit: cover;" />
+        <img src="/images/apple.jpg" style="width: 100px; height: 100px; object-fit: cover;" />
         <br/> 曾聖雅 Sheng-Ya Tseng<br/>Mail: 11153087@mail.ntou.edu.tw
     </td>        
     <td width="33%" style="border:0px; width:33.33%; text-align: center;">
-        <img src="images/su.jpg" style="width: 100px; height: 100px; object-fit: cover;" />
+        <img src="/images/su.jpg" style="width: 100px; height: 100px; object-fit: cover;" />
         <br/> 蘇冠楷 Guan-Kai Su<br/>Mail: michael0922851688@gmail.com
     </td>       
     <td width="33%" style="border:0px; width:33.33%; text-align: center;">
-        <img src="images/lee.jpg" style="width: 100px; height: 100px; object-fit: cover;" />
+        <img src="/images/lee.jpg" style="width: 100px; height: 100px; object-fit: cover;" />
         <br/> 李政霖 Cheng-Lin Li<br/>Mail: 11253010@mail.ntou.edu.tw
     </td>       
   </tr>
