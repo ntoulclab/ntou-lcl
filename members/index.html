@@ -457,24 +457,21 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="principal-investigator">
-<i class="icon fa-solid fa-users"></i>Principal Investigator</h1>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
   size: ;
 -->
 
+<h1 id="principal-investigator">
+<i class="icon fa-solid fa-users"></i>Principal Investigator</h1>
+
 <div class="feature">
   <a class="feature-image" aria-label="江明理 Ming-Li Chiang, Ph.D.">
-    <img src="/ntou-lcl/images/mingli.jpg" loading="lazy" alt="江明理 Ming-Li Chiang, Ph.D." onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+    <img src="/ntou-lcl/images/mingli.jpg" style="
+      width: 100%;
+      height: 100%;      
+      " loading="lazy" alt="figure image" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
@@ -499,20 +496,68 @@
 
   </div>
 </div>
+  </section>
 
-<h1 id="master-students">
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <h1 id="master-students">
 <i class="icon fa-solid fa-users"></i>​Master Students</h1>
 <h2 id="碩二">碩二</h2>
 
-<div class="cols" style="--cols: 3">
+<style>
+    /* 控制每個圖片區塊的基本樣式 */
+    .image-grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px; /* 圖片之間的間距 */
+    }
   
+    .image-grid-item {
+      flex-basis: calc(25% - 20px); /* 每行4個 */
+      text-align: center;
+    }
+  
+    /* 當視窗變窄時，自動變為每行3個 */
+    @media (max-width: 1024px) {
+      .image-grid-item {
+        flex-basis: calc(33.33% - 20px); /* 每行3個 */
+      }
+    }
+  
+    /* 當視窗變得更窄時，變為每行2個 */
+    @media (max-width: 768px) {
+      .image-grid-item {
+        flex-basis: calc(50% - 20px); /* 每行2個 */
+      }
+    }
+  
+    /* 當視窗最窄時，變為每行1個 */
+    @media (max-width: 480px) {
+      .image-grid-item {
+        flex-basis: calc(100% - 20px); /* 每行1個 */
+      }
+    }
+  </style>
+
+<div class="image-grid-container">
     
-    <div>
-<!--<figure class="figure">
+    
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
   <a
     
     class="figure-image"
-    aria-label="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
+    aria-label="<strong>曾聖雅 Sheng-Ya Tseng</strong><br>11153087@mail.ntou.edu.tw"
   >
     <img
       src="/ntou-lcl/images/apple.jpg"
@@ -520,7 +565,7 @@
         width: auto;
         max-height: unset;
       "
-      alt="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
+      alt="<strong>曾聖雅 Sheng-Ya Tseng</strong><br>11153087@mail.ntou.edu.tw"
       loading="lazy"
       onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
@@ -528,7 +573,7 @@
   </a>
   
     <figcaption class="figure-caption">
-      曾聖雅 Sheng-Ya Tseng<br />Mail: 11153087@mail.ntou.edu.tw
+      <strong>曾聖雅 Sheng-Ya Tseng</strong><br />11153087@mail.ntou.edu.tw
 
     </figcaption>
   
@@ -540,7 +585,7 @@
     <a
       
       class="figure-image"
-      aria-label="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
+      aria-label="<strong>曾聖雅 Sheng-Ya Tseng</strong><br>11153087@mail.ntou.edu.tw"
     >
       <img
         src="/ntou-lcl/images/apple.jpg"
@@ -549,7 +594,7 @@
           height: 150px; /* 固定高度 */
           object-fit: cover; /* 保持比例並裁剪多餘部分 */
         "
-        alt="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
+        alt="<strong>曾聖雅 Sheng-Ya Tseng</strong><br>11153087@mail.ntou.edu.tw"
         loading="lazy"
         onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
@@ -557,7 +602,7 @@
     </a>
     
       <figcaption class="figure-caption">
-        曾聖雅 Sheng-Ya Tseng<br />Mail: 11153087@mail.ntou.edu.tw
+        <strong>曾聖雅 Sheng-Ya Tseng</strong><br />11153087@mail.ntou.edu.tw
 
       </figcaption>
     
@@ -565,30 +610,33 @@
 </div>
 -->
 <figure class="figure" style="text-align: center; margin: 10px;">
-  <a class="figure-image" aria-label="曾聖雅 Sheng-Ya Tseng&lt;br&gt;Mail: 11153087@mail.ntou.edu.tw">
+  <a class="figure-image" aria-label="&lt;strong&gt;曾聖雅 Sheng-Ya Tseng&lt;/strong&gt;&lt;br&gt;11153087@mail.ntou.edu.tw">
     <img src="/ntou-lcl/images/apple.jpg" style="
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 225px;
         object-fit: cover;
-      " alt="曾聖雅 Sheng-Ya Tseng&lt;br&gt;Mail: 11153087@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+      " alt="&lt;strong&gt;曾聖雅 Sheng-Ya Tseng&lt;/strong&gt;&lt;br&gt;11153087@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw
+      <strong>曾聖雅 Sheng-Ya Tseng</strong><br>11153087@mail.ntou.edu.tw
 
     </figcaption>
   
 </figure>
-
-</div>
-  
+      </div>
     
-    <div>
-<!--<figure class="figure">
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
   <a
     
     class="figure-image"
-    aria-label="蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com"
+    aria-label="<strong>蘇冠楷 Guan-Kai Su</strong><br>michael0922851688@gmail.com"
   >
     <img
       src="/ntou-lcl/images/su.jpg"
@@ -596,7 +644,7 @@
         width: auto;
         max-height: unset;
       "
-      alt="蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com"
+      alt="<strong>蘇冠楷 Guan-Kai Su</strong><br>michael0922851688@gmail.com"
       loading="lazy"
       onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
@@ -604,7 +652,7 @@
   </a>
   
     <figcaption class="figure-caption">
-      蘇冠楷 Guan-Kai Su<br />Mail: michael0922851688@gmail.com
+      <strong>蘇冠楷 Guan-Kai Su</strong><br />michael0922851688@gmail.com
 
     </figcaption>
   
@@ -616,7 +664,7 @@
     <a
       
       class="figure-image"
-      aria-label="蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com"
+      aria-label="<strong>蘇冠楷 Guan-Kai Su</strong><br>michael0922851688@gmail.com"
     >
       <img
         src="/ntou-lcl/images/su.jpg"
@@ -625,7 +673,7 @@
           height: 150px; /* 固定高度 */
           object-fit: cover; /* 保持比例並裁剪多餘部分 */
         "
-        alt="蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com"
+        alt="<strong>蘇冠楷 Guan-Kai Su</strong><br>michael0922851688@gmail.com"
         loading="lazy"
         onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
@@ -633,7 +681,7 @@
     </a>
     
       <figcaption class="figure-caption">
-        蘇冠楷 Guan-Kai Su<br />Mail: michael0922851688@gmail.com
+        <strong>蘇冠楷 Guan-Kai Su</strong><br />michael0922851688@gmail.com
 
       </figcaption>
     
@@ -641,30 +689,33 @@
 </div>
 -->
 <figure class="figure" style="text-align: center; margin: 10px;">
-  <a class="figure-image" aria-label="蘇冠楷 Guan-Kai Su&lt;br&gt;Mail: michael0922851688@gmail.com">
+  <a class="figure-image" aria-label="&lt;strong&gt;蘇冠楷 Guan-Kai Su&lt;/strong&gt;&lt;br&gt;michael0922851688@gmail.com">
     <img src="/ntou-lcl/images/su.jpg" style="
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 225px;
         object-fit: cover;
-      " alt="蘇冠楷 Guan-Kai Su&lt;br&gt;Mail: michael0922851688@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+      " alt="&lt;strong&gt;蘇冠楷 Guan-Kai Su&lt;/strong&gt;&lt;br&gt;michael0922851688@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com
+      <strong>蘇冠楷 Guan-Kai Su</strong><br>michael0922851688@gmail.com
 
     </figcaption>
   
 </figure>
-
-</div>
-  
+      </div>
     
-    <div>
-<!--<figure class="figure">
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
   <a
     
     class="figure-image"
-    aria-label="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
+    aria-label="<strong>李政霖 Cheng-Lin Li</strong><br>11253010@mail.ntou.edu.tw"
   >
     <img
       src="/ntou-lcl/images/lee.jpg"
@@ -672,7 +723,7 @@
         width: auto;
         max-height: unset;
       "
-      alt="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
+      alt="<strong>李政霖 Cheng-Lin Li</strong><br>11253010@mail.ntou.edu.tw"
       loading="lazy"
       onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
@@ -680,7 +731,7 @@
   </a>
   
     <figcaption class="figure-caption">
-      李政霖 Cheng-Lin Li<br />Mail: 11253010@mail.ntou.edu.tw
+      <strong>李政霖 Cheng-Lin Li</strong><br />11253010@mail.ntou.edu.tw
 
     </figcaption>
   
@@ -692,7 +743,7 @@
     <a
       
       class="figure-image"
-      aria-label="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
+      aria-label="<strong>李政霖 Cheng-Lin Li</strong><br>11253010@mail.ntou.edu.tw"
     >
       <img
         src="/ntou-lcl/images/lee.jpg"
@@ -701,7 +752,7 @@
           height: 150px; /* 固定高度 */
           object-fit: cover; /* 保持比例並裁剪多餘部分 */
         "
-        alt="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
+        alt="<strong>李政霖 Cheng-Lin Li</strong><br>11253010@mail.ntou.edu.tw"
         loading="lazy"
         onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
@@ -709,7 +760,7 @@
     </a>
     
       <figcaption class="figure-caption">
-        李政霖 Cheng-Lin Li<br />Mail: 11253010@mail.ntou.edu.tw
+        <strong>李政霖 Cheng-Lin Li</strong><br />11253010@mail.ntou.edu.tw
 
       </figcaption>
     
@@ -717,214 +768,936 @@
 </div>
 -->
 <figure class="figure" style="text-align: center; margin: 10px;">
-  <a class="figure-image" aria-label="李政霖 Cheng-Lin Li&lt;br&gt;Mail: 11253010@mail.ntou.edu.tw">
+  <a class="figure-image" aria-label="&lt;strong&gt;李政霖 Cheng-Lin Li&lt;/strong&gt;&lt;br&gt;11253010@mail.ntou.edu.tw">
     <img src="/ntou-lcl/images/lee.jpg" style="
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 225px;
         object-fit: cover;
-      " alt="李政霖 Cheng-Lin Li&lt;br&gt;Mail: 11253010@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+      " alt="&lt;strong&gt;李政霖 Cheng-Lin Li&lt;/strong&gt;&lt;br&gt;11253010@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw
+      <strong>李政霖 Cheng-Lin Li</strong><br>11253010@mail.ntou.edu.tw
 
     </figcaption>
   
 </figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>楊啓宏 Qi-Hong Yang</strong><br>11253037@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/young.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>楊啓宏 Qi-Hong Yang</strong><br>11253037@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-</div>
+    >
+  </a>
   
-</div>
+    <figcaption class="figure-caption">
+      <strong>楊啓宏 Qi-Hong Yang</strong><br />11253037@mail.ntou.edu.tw
 
-<div class="feature">
-  <a class="feature-image" aria-label="楊啓宏 Qi-Hong Yang">
-    <img src="/ntou-lcl/images/young.jpg" loading="lazy" alt="楊啓宏 Qi-Hong Yang" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>楊啓宏 Qi-Hong Yang</strong><br>11253037@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/young.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>楊啓宏 Qi-Hong Yang</strong><br>11253037@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>楊啓宏 Qi-Hong Yang</strong><br />11253037@mail.ntou.edu.tw
+
+      </figcaption>
+    
+  </figure>
+</div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;楊啓宏 Qi-Hong Yang&lt;/strong&gt;&lt;br&gt;11253037@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/young.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;楊啓宏 Qi-Hong Yang&lt;/strong&gt;&lt;br&gt;11253037@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
+  
+    <figcaption class="figure-caption">
+      <strong>楊啓宏 Qi-Hong Yang</strong><br>11253037@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
     
-      <p class="feature-title">楊啓宏 Qi-Hong Yang</p>
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
     
-    
-<p>年級: 碩二</p>
+    class="figure-image"
+    aria-label="<strong>江育翰 Yu-Han Jiang</strong><br>11253039@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/yh.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>江育翰 Yu-Han Jiang</strong><br>11253039@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-<p>Mail: 11253037@mail.ntou.edu.tw</p>
-
-
-  </div>
-</div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="江育翰 Yu-Han Jiang">
-    <img src="/ntou-lcl/images/yh.jpg" loading="lazy" alt="江育翰 Yu-Han Jiang" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">江育翰 Yu-Han Jiang</p>
-    
-    
-<p>年級: 碩二</p>
+  
+    <figcaption class="figure-caption">
+      <strong>江育翰 Yu-Han Jiang</strong><br />11253039@mail.ntou.edu.tw
 
-<p>Mail: 11253039@mail.ntou.edu.tw</p>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>江育翰 Yu-Han Jiang</strong><br>11253039@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/yh.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>江育翰 Yu-Han Jiang</strong><br>11253039@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>江育翰 Yu-Han Jiang</strong><br />11253039@mail.ntou.edu.tw
 
-  </div>
+      </figcaption>
+    
+  </figure>
 </div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="蔡宗佑 Zong-You Cai">
-    <img src="/ntou-lcl/images/chae.jpg" loading="lazy" alt="蔡宗佑 Zong-You Cai" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;江育翰 Yu-Han Jiang&lt;/strong&gt;&lt;br&gt;11253039@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/yh.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;江育翰 Yu-Han Jiang&lt;/strong&gt;&lt;br&gt;11253039@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
+  
+    <figcaption class="figure-caption">
+      <strong>江育翰 Yu-Han Jiang</strong><br>11253039@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
     
-      <p class="feature-title">蔡宗佑 Zong-You Cai</p>
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
     
-    
-<p>年級: 碩二</p>
+    class="figure-image"
+    aria-label="<strong>蔡宗佑 Zong-You Cai</strong><br>11253107@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/chae.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>蔡宗佑 Zong-You Cai</strong><br>11253107@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-<p>Mail: 11253107@mail.ntou.edu.tw</p>
-
-
-  </div>
-</div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="胡惇貿 DUN-MAO HU">
-    <img src="/ntou-lcl/images/mao2.jpg" loading="lazy" alt="胡惇貿 DUN-MAO HU" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">胡惇貿 DUN-MAO HU</p>
-    
-    
-<p>年級: 碩二</p>
+  
+    <figcaption class="figure-caption">
+      <strong>蔡宗佑 Zong-You Cai</strong><br />11253107@mail.ntou.edu.tw
 
-<p>Mail: mouei0906@gmail.com</p>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>蔡宗佑 Zong-You Cai</strong><br>11253107@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/chae.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>蔡宗佑 Zong-You Cai</strong><br>11253107@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>蔡宗佑 Zong-You Cai</strong><br />11253107@mail.ntou.edu.tw
 
-  </div>
+      </figcaption>
+    
+  </figure>
 </div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="陳柏帆 Bo-Fan Chen">
-    <img src="/ntou-lcl/images/bo.jpg" loading="lazy" alt="陳柏帆 Bo-Fan Chen" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;蔡宗佑 Zong-You Cai&lt;/strong&gt;&lt;br&gt;11253107@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/chae.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;蔡宗佑 Zong-You Cai&lt;/strong&gt;&lt;br&gt;11253107@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
+  
+    <figcaption class="figure-caption">
+      <strong>蔡宗佑 Zong-You Cai</strong><br>11253107@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
     
-      <p class="feature-title">陳柏帆 Bo-Fan Chen</p>
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
     
-    
-<p>年級: 碩一</p>
+    class="figure-image"
+    aria-label="<strong>胡惇貿 DUN-MAO HU</strong><br>mouei0906@gmail.com"
+  >
+    <img
+      src="/ntou-lcl/images/mao2.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>胡惇貿 DUN-MAO HU</strong><br>mouei0906@gmail.com"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-<p>Mail: 401005brian@gmail.com</p>
-
-
-  </div>
-</div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="丁昱鈞 YU-JUN DING">
-    <img src="/ntou-lcl/images/TINTU.jpg" loading="lazy" alt="丁昱鈞 YU-JUN DING" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">丁昱鈞 YU-JUN DING</p>
-    
-    
-<p>年級: 碩一</p>
+  
+    <figcaption class="figure-caption">
+      <strong>胡惇貿 DUN-MAO HU</strong><br />mouei0906@gmail.com
 
-<p>Mail: 11353003@email.ntou.edu.tw</p>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>胡惇貿 DUN-MAO HU</strong><br>mouei0906@gmail.com"
+    >
+      <img
+        src="/ntou-lcl/images/mao2.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>胡惇貿 DUN-MAO HU</strong><br>mouei0906@gmail.com"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>胡惇貿 DUN-MAO HU</strong><br />mouei0906@gmail.com
 
-  </div>
+      </figcaption>
+    
+  </figure>
 </div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="李登峰 DENG-FENG LI">
-    <img src="/ntou-lcl/images/li2.jpg" loading="lazy" alt="李登峰 DENG-FENG LI" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;胡惇貿 DUN-MAO HU&lt;/strong&gt;&lt;br&gt;mouei0906@gmail.com">
+    <img src="/ntou-lcl/images/mao2.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;胡惇貿 DUN-MAO HU&lt;/strong&gt;&lt;br&gt;mouei0906@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">李登峰 DENG-FENG LI</p>
-    
-    
-<p>年級: 碩一</p>
+  
+    <figcaption class="figure-caption">
+      <strong>胡惇貿 DUN-MAO HU</strong><br>mouei0906@gmail.com
 
-<p>Mail: A24669855@gmail.com</p>
-
-
+    </figcaption>
+  
+</figure>
+      </div>
+    
   </div>
-</div>
 
-<div class="feature">
-  <a class="feature-image" aria-label="林易廷 YI-TING LIN">
-    <img src="/ntou-lcl/images/lin.jpg" loading="lazy" alt="林易廷 YI-TING LIN" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+<h2 id="碩一">碩一</h2>
+
+<style>
+    /* 控制每個圖片區塊的基本樣式 */
+    .image-grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px; /* 圖片之間的間距 */
+    }
+  
+    .image-grid-item {
+      flex-basis: calc(25% - 20px); /* 每行4個 */
+      text-align: center;
+    }
+  
+    /* 當視窗變窄時，自動變為每行3個 */
+    @media (max-width: 1024px) {
+      .image-grid-item {
+        flex-basis: calc(33.33% - 20px); /* 每行3個 */
+      }
+    }
+  
+    /* 當視窗變得更窄時，變為每行2個 */
+    @media (max-width: 768px) {
+      .image-grid-item {
+        flex-basis: calc(50% - 20px); /* 每行2個 */
+      }
+    }
+  
+    /* 當視窗最窄時，變為每行1個 */
+    @media (max-width: 480px) {
+      .image-grid-item {
+        flex-basis: calc(100% - 20px); /* 每行1個 */
+      }
+    }
+  </style>
+
+<div class="image-grid-container">
+    
+    
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>陳柏帆 Bo-Fan Chen</strong><br>401005brian@gmail.com"
+  >
+    <img
+      src="/ntou-lcl/images/bo.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>陳柏帆 Bo-Fan Chen</strong><br>401005brian@gmail.com"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">林易廷 YI-TING LIN</p>
-    
-    
-<p>年級: 碩一</p>
+  
+    <figcaption class="figure-caption">
+      <strong>陳柏帆 Bo-Fan Chen</strong><br />401005brian@gmail.com
 
-<p>Mail: Zed10487@gmail.com</p>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>陳柏帆 Bo-Fan Chen</strong><br>401005brian@gmail.com"
+    >
+      <img
+        src="/ntou-lcl/images/bo.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>陳柏帆 Bo-Fan Chen</strong><br>401005brian@gmail.com"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>陳柏帆 Bo-Fan Chen</strong><br />401005brian@gmail.com
 
-  </div>
+      </figcaption>
+    
+  </figure>
 </div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="黃冠霖 GUAN-LIN HUANG">
-    <img src="/ntou-lcl/images/huang.jpg" loading="lazy" alt="黃冠霖 GUAN-LIN HUANG" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;陳柏帆 Bo-Fan Chen&lt;/strong&gt;&lt;br&gt;401005brian@gmail.com">
+    <img src="/ntou-lcl/images/bo.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;陳柏帆 Bo-Fan Chen&lt;/strong&gt;&lt;br&gt;401005brian@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
+  
+    <figcaption class="figure-caption">
+      <strong>陳柏帆 Bo-Fan Chen</strong><br>401005brian@gmail.com
+
+    </figcaption>
+  
+</figure>
+      </div>
     
-      <p class="feature-title">黃冠霖 GUAN-LIN HUANG</p>
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
     
-    
-<p>年級: 碩一</p>
+    class="figure-image"
+    aria-label="<strong>丁昱鈞 YU-JUN DING</strong><br>11353003@email.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/TINTU.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>丁昱鈞 YU-JUN DING</strong><br>11353003@email.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-<p>Mail: 11353007@mail.ntou.edu.tw</p>
-
-
-  </div>
-</div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="戴廷宇 TING-YU DAI">
-    <img src="/ntou-lcl/images/tin.jpg" loading="lazy" alt="戴廷宇 TING-YU DAI" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">戴廷宇 TING-YU DAI</p>
-    
-    
-<p>年級: 碩一</p>
+  
+    <figcaption class="figure-caption">
+      <strong>丁昱鈞 YU-JUN DING</strong><br />11353003@email.ntou.edu.tw
 
-<p>Mail: somewhitedie@gmail.com</p>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>丁昱鈞 YU-JUN DING</strong><br>11353003@email.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/TINTU.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>丁昱鈞 YU-JUN DING</strong><br>11353003@email.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>丁昱鈞 YU-JUN DING</strong><br />11353003@email.ntou.edu.tw
 
-  </div>
+      </figcaption>
+    
+  </figure>
 </div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="胡安亞 ANAYAT">
-    <img src="/ntou-lcl/images/white.jpg" loading="lazy" alt="胡安亞 ANAYAT" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;丁昱鈞 YU-JUN DING&lt;/strong&gt;&lt;br&gt;11353003@email.ntou.edu.tw">
+    <img src="/ntou-lcl/images/TINTU.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;丁昱鈞 YU-JUN DING&lt;/strong&gt;&lt;br&gt;11353003@email.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">胡安亞 ANAYAT</p>
-    
-    
-<p>年級: 碩一</p>
+  
+    <figcaption class="figure-caption">
+      <strong>丁昱鈞 YU-JUN DING</strong><br>11353003@email.ntou.edu.tw
 
-<p>Mail: @mail.ntou.edu.tw</p>
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>李登峰 DENG-FENG LI</strong><br>A24669855@gmail.com"
+  >
+    <img
+      src="/ntou-lcl/images/li2.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>李登峰 DENG-FENG LI</strong><br>A24669855@gmail.com"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>李登峰 DENG-FENG LI</strong><br />A24669855@gmail.com
 
-  </div>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>李登峰 DENG-FENG LI</strong><br>A24669855@gmail.com"
+    >
+      <img
+        src="/ntou-lcl/images/li2.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>李登峰 DENG-FENG LI</strong><br>A24669855@gmail.com"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>李登峰 DENG-FENG LI</strong><br />A24669855@gmail.com
+
+      </figcaption>
+    
+  </figure>
 </div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;李登峰 DENG-FENG LI&lt;/strong&gt;&lt;br&gt;A24669855@gmail.com">
+    <img src="/ntou-lcl/images/li2.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;李登峰 DENG-FENG LI&lt;/strong&gt;&lt;br&gt;A24669855@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>李登峰 DENG-FENG LI</strong><br>A24669855@gmail.com
 
-<h1 id="in-service-master-students">
-<i class="icon fa-solid fa-users"></i>​In-service Master Students</h1>
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>林易廷 YI-TING LIN</strong><br>Zed10487@gmail.com"
+  >
+    <img
+      src="/ntou-lcl/images/lin.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>林易廷 YI-TING LIN</strong><br>Zed10487@gmail.com"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>林易廷 YI-TING LIN</strong><br />Zed10487@gmail.com
+
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>林易廷 YI-TING LIN</strong><br>Zed10487@gmail.com"
+    >
+      <img
+        src="/ntou-lcl/images/lin.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>林易廷 YI-TING LIN</strong><br>Zed10487@gmail.com"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>林易廷 YI-TING LIN</strong><br />Zed10487@gmail.com
+
+      </figcaption>
+    
+  </figure>
+</div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;林易廷 YI-TING LIN&lt;/strong&gt;&lt;br&gt;Zed10487@gmail.com">
+    <img src="/ntou-lcl/images/lin.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;林易廷 YI-TING LIN&lt;/strong&gt;&lt;br&gt;Zed10487@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>林易廷 YI-TING LIN</strong><br>Zed10487@gmail.com
+
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>黃冠霖 GUAN-LIN HUANG</strong><br>11353007@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/huang.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>黃冠霖 GUAN-LIN HUANG</strong><br>11353007@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>黃冠霖 GUAN-LIN HUANG</strong><br />11353007@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>黃冠霖 GUAN-LIN HUANG</strong><br>11353007@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/huang.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>黃冠霖 GUAN-LIN HUANG</strong><br>11353007@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>黃冠霖 GUAN-LIN HUANG</strong><br />11353007@mail.ntou.edu.tw
+
+      </figcaption>
+    
+  </figure>
+</div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;黃冠霖 GUAN-LIN HUANG&lt;/strong&gt;&lt;br&gt;11353007@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/huang.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;黃冠霖 GUAN-LIN HUANG&lt;/strong&gt;&lt;br&gt;11353007@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>黃冠霖 GUAN-LIN HUANG</strong><br>11353007@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>戴廷宇 TING-YU DAI</strong><br>somewhitedie@gmail.com"
+  >
+    <img
+      src="/ntou-lcl/images/tin.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>戴廷宇 TING-YU DAI</strong><br>somewhitedie@gmail.com"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>戴廷宇 TING-YU DAI</strong><br />somewhitedie@gmail.com
+
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>戴廷宇 TING-YU DAI</strong><br>somewhitedie@gmail.com"
+    >
+      <img
+        src="/ntou-lcl/images/tin.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>戴廷宇 TING-YU DAI</strong><br>somewhitedie@gmail.com"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>戴廷宇 TING-YU DAI</strong><br />somewhitedie@gmail.com
+
+      </figcaption>
+    
+  </figure>
+</div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;戴廷宇 TING-YU DAI&lt;/strong&gt;&lt;br&gt;somewhitedie@gmail.com">
+    <img src="/ntou-lcl/images/tin.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;戴廷宇 TING-YU DAI&lt;/strong&gt;&lt;br&gt;somewhitedie@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>戴廷宇 TING-YU DAI</strong><br>somewhitedie@gmail.com
+
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>胡安亞 ANAYAT</strong><br>@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/white.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>胡安亞 ANAYAT</strong><br>@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>胡安亞 ANAYAT</strong><br />@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>胡安亞 ANAYAT</strong><br>@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/white.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>胡安亞 ANAYAT</strong><br>@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>胡安亞 ANAYAT</strong><br />@mail.ntou.edu.tw
+
+      </figcaption>
+    
+  </figure>
+</div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;胡安亞 ANAYAT&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/white.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;胡安亞 ANAYAT&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>胡安亞 ANAYAT</strong><br>@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
+    
+  </div>
   </section>
 
   
@@ -932,187 +1705,951 @@
   
 
   <section class="background" data-size="page">
-    <!--
-  background: ;
-  dark: ;
-  size: ;
+    <h1 id="in-service-master-students">
+<i class="icon fa-solid fa-users"></i>​In-service Master Students</h1>
+<p>=</p>
+
+<style>
+    /* 控制每個圖片區塊的基本樣式 */
+    .image-grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px; /* 圖片之間的間距 */
+    }
+  
+    .image-grid-item {
+      flex-basis: calc(25% - 20px); /* 每行4個 */
+      text-align: center;
+    }
+  
+    /* 當視窗變窄時，自動變為每行3個 */
+    @media (max-width: 1024px) {
+      .image-grid-item {
+        flex-basis: calc(33.33% - 20px); /* 每行3個 */
+      }
+    }
+  
+    /* 當視窗變得更窄時，變為每行2個 */
+    @media (max-width: 768px) {
+      .image-grid-item {
+        flex-basis: calc(50% - 20px); /* 每行2個 */
+      }
+    }
+  
+    /* 當視窗最窄時，變為每行1個 */
+    @media (max-width: 480px) {
+      .image-grid-item {
+        flex-basis: calc(100% - 20px); /* 每行1個 */
+      }
+    }
+  </style>
+
+<div class="image-grid-container">
+    
+    
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>鍾文幀 WEN-ZHENG ZHONG</strong><br>kaitlyshawnrt@gmail.com"
+  >
+    <img
+      src="/ntou-lcl/images/kwen.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>鍾文幀 WEN-ZHENG ZHONG</strong><br>kaitlyshawnrt@gmail.com"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>鍾文幀 WEN-ZHENG ZHONG</strong><br />kaitlyshawnrt@gmail.com
+
+    </figcaption>
+  
+</figure>
 -->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>鍾文幀 WEN-ZHENG ZHONG</strong><br>kaitlyshawnrt@gmail.com"
+    >
+      <img
+        src="/ntou-lcl/images/kwen.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>鍾文幀 WEN-ZHENG ZHONG</strong><br>kaitlyshawnrt@gmail.com"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-<div class="feature">
-  <a class="feature-image" aria-label="鍾文幀 WEN-ZHENG ZHONG">
-    <img src="/ntou-lcl/images/kwen.jpg" loading="lazy" alt="鍾文幀 WEN-ZHENG ZHONG" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
+      >
+    </a>
     
-      <p class="feature-title">鍾文幀 WEN-ZHENG ZHONG</p>
+      <figcaption class="figure-caption">
+        <strong>鍾文幀 WEN-ZHENG ZHONG</strong><br />kaitlyshawnrt@gmail.com
+
+      </figcaption>
     
-    
-<p>年級:在職碩一</p>
-
-<p>Mail: kaitlyshawnrt@gmail.com</p>
-
-
-  </div>
+  </figure>
 </div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="陳羿宏 YI-HONG CHEN">
-    <img src="/ntou-lcl/images/CY.jpg" loading="lazy" alt="陳羿宏 YI-HONG CHEN" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;鍾文幀 WEN-ZHENG ZHONG&lt;/strong&gt;&lt;br&gt;kaitlyshawnrt@gmail.com">
+    <img src="/ntou-lcl/images/kwen.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;鍾文幀 WEN-ZHENG ZHONG&lt;/strong&gt;&lt;br&gt;kaitlyshawnrt@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">陳羿宏 YI-HONG CHEN</p>
-    
-    
-<p>年級:在職碩一</p>
+  
+    <figcaption class="figure-caption">
+      <strong>鍾文幀 WEN-ZHENG ZHONG</strong><br>kaitlyshawnrt@gmail.com
 
-<p>Mail: junesixteen25@gmail.com</p>
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>陳羿宏 YI-HONG CHEN</strong><br>junesixteen25@gmail.com"
+  >
+    <img
+      src="/ntou-lcl/images/CY.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>陳羿宏 YI-HONG CHEN</strong><br>junesixteen25@gmail.com"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-  </div>
-</div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="李至偉 ZHI-WEI LI">
-    <img src="/ntou-lcl/images/JASON.jpg" loading="lazy" alt="李至偉 ZHI-WEI LI" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">李至偉 ZHI-WEI LI</p>
-    
-    
-<p>年級:在職碩一</p>
+  
+    <figcaption class="figure-caption">
+      <strong>陳羿宏 YI-HONG CHEN</strong><br />junesixteen25@gmail.com
 
-<p>Mail: j0988251682@gmail.com</p>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>陳羿宏 YI-HONG CHEN</strong><br>junesixteen25@gmail.com"
+    >
+      <img
+        src="/ntou-lcl/images/CY.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>陳羿宏 YI-HONG CHEN</strong><br>junesixteen25@gmail.com"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>陳羿宏 YI-HONG CHEN</strong><br />junesixteen25@gmail.com
 
-  </div>
+      </figcaption>
+    
+  </figure>
 </div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;陳羿宏 YI-HONG CHEN&lt;/strong&gt;&lt;br&gt;junesixteen25@gmail.com">
+    <img src="/ntou-lcl/images/CY.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;陳羿宏 YI-HONG CHEN&lt;/strong&gt;&lt;br&gt;junesixteen25@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>陳羿宏 YI-HONG CHEN</strong><br>junesixteen25@gmail.com
 
-<h1 id="undergraduate-students">
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>李至偉 ZHI-WEI LI</strong><br>j0988251682@gmail.com"
+  >
+    <img
+      src="/ntou-lcl/images/JASON.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>李至偉 ZHI-WEI LI</strong><br>j0988251682@gmail.com"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>李至偉 ZHI-WEI LI</strong><br />j0988251682@gmail.com
+
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>李至偉 ZHI-WEI LI</strong><br>j0988251682@gmail.com"
+    >
+      <img
+        src="/ntou-lcl/images/JASON.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>李至偉 ZHI-WEI LI</strong><br>j0988251682@gmail.com"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>李至偉 ZHI-WEI LI</strong><br />j0988251682@gmail.com
+
+      </figcaption>
+    
+  </figure>
+</div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;李至偉 ZHI-WEI LI&lt;/strong&gt;&lt;br&gt;j0988251682@gmail.com">
+    <img src="/ntou-lcl/images/JASON.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;李至偉 ZHI-WEI LI&lt;/strong&gt;&lt;br&gt;j0988251682@gmail.com" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>李至偉 ZHI-WEI LI</strong><br>j0988251682@gmail.com
+
+    </figcaption>
+  
+</figure>
+      </div>
+    
+  </div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <h1 id="undergraduate-students">
 <i class="icon fa-solid fa-users"></i>Undergraduate Students</h1>
 
-<div class="feature">
-  <a class="feature-image" aria-label="葉沛妤 PEI-YU YE">
-    <img src="/ntou-lcl/images/yea.jpg" loading="lazy" alt="葉沛妤 PEI-YU YE" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+<style>
+    /* 控制每個圖片區塊的基本樣式 */
+    .image-grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px; /* 圖片之間的間距 */
+    }
+  
+    .image-grid-item {
+      flex-basis: calc(25% - 20px); /* 每行4個 */
+      text-align: center;
+    }
+  
+    /* 當視窗變窄時，自動變為每行3個 */
+    @media (max-width: 1024px) {
+      .image-grid-item {
+        flex-basis: calc(33.33% - 20px); /* 每行3個 */
+      }
+    }
+  
+    /* 當視窗變得更窄時，變為每行2個 */
+    @media (max-width: 768px) {
+      .image-grid-item {
+        flex-basis: calc(50% - 20px); /* 每行2個 */
+      }
+    }
+  
+    /* 當視窗最窄時，變為每行1個 */
+    @media (max-width: 480px) {
+      .image-grid-item {
+        flex-basis: calc(100% - 20px); /* 每行1個 */
+      }
+    }
+  </style>
+
+<div class="image-grid-container">
+    
+    
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>葉沛妤 PEI-YU YE</strong><br>@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/yea.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>葉沛妤 PEI-YU YE</strong><br>@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">葉沛妤 PEI-YU YE</p>
-    
-    
-<p>年級: 大三</p>
+  
+    <figcaption class="figure-caption">
+      <strong>葉沛妤 PEI-YU YE</strong><br />@mail.ntou.edu.tw
 
-<p>Mail: @mail.ntou.edu.tw</p>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>葉沛妤 PEI-YU YE</strong><br>@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/yea.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>葉沛妤 PEI-YU YE</strong><br>@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>葉沛妤 PEI-YU YE</strong><br />@mail.ntou.edu.tw
 
-  </div>
+      </figcaption>
+    
+  </figure>
 </div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="洪珮珈 PEI-JIA HONG">
-    <img src="/ntou-lcl/images/hongp.jpg" loading="lazy" alt="洪珮珈 PEI-JIA HONG" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;葉沛妤 PEI-YU YE&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/yea.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;葉沛妤 PEI-YU YE&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
+  
+    <figcaption class="figure-caption">
+      <strong>葉沛妤 PEI-YU YE</strong><br>@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
     
-      <p class="feature-title">洪珮珈 PEI-JIA HONG</p>
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
     
-    
-<p>年級: 大三</p>
+    class="figure-image"
+    aria-label="<strong>洪珮珈 PEI-JIA HONG</strong><br>@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/hongp.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>洪珮珈 PEI-JIA HONG</strong><br>@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-<p>Mail: @mail.ntou.edu.tw</p>
-
-
-  </div>
-</div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="邱意婷 YI-TING QIU">
-    <img src="/ntou-lcl/images/cheao.jpg" loading="lazy" alt="邱意婷 YI-TING QIU" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">邱意婷 YI-TING QIU</p>
-    
-    
-<p>年級: 大三</p>
+  
+    <figcaption class="figure-caption">
+      <strong>洪珮珈 PEI-JIA HONG</strong><br />@mail.ntou.edu.tw
 
-<p>Mail: @mail.ntou.edu.tw</p>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>洪珮珈 PEI-JIA HONG</strong><br>@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/hongp.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>洪珮珈 PEI-JIA HONG</strong><br>@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>洪珮珈 PEI-JIA HONG</strong><br />@mail.ntou.edu.tw
 
-  </div>
+      </figcaption>
+    
+  </figure>
 </div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="袁子婷 ZI-TING YUAN">
-    <img src="/ntou-lcl/images/yung.jpg" loading="lazy" alt="袁子婷 ZI-TING YUAN" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;洪珮珈 PEI-JIA HONG&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/hongp.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;洪珮珈 PEI-JIA HONG&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
+  
+    <figcaption class="figure-caption">
+      <strong>洪珮珈 PEI-JIA HONG</strong><br>@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
     
-      <p class="feature-title">袁子婷 ZI-TING YUAN</p>
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
     
-    
-<p>年級: 大三</p>
+    class="figure-image"
+    aria-label="<strong>邱意婷 YI-TING QIU</strong><br>@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/cheao.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>邱意婷 YI-TING QIU</strong><br>@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-<p>Mail: @mail.ntou.edu.tw</p>
-
-
-  </div>
-</div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="張士成 SHI-CHENG ZHANG">
-    <img src="/ntou-lcl/images/chang.jpg" loading="lazy" alt="張士成 SHI-CHENG ZHANG" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">張士成 SHI-CHENG ZHANG</p>
-    
-    
-<p>年級: 大三</p>
+  
+    <figcaption class="figure-caption">
+      <strong>邱意婷 YI-TING QIU</strong><br />@mail.ntou.edu.tw
 
-<p>Mail: @mail.ntou.edu.tw</p>
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>邱意婷 YI-TING QIU</strong><br>@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/cheao.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>邱意婷 YI-TING QIU</strong><br>@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>邱意婷 YI-TING QIU</strong><br />@mail.ntou.edu.tw
 
-  </div>
+      </figcaption>
+    
+  </figure>
 </div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;邱意婷 YI-TING QIU&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/cheao.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;邱意婷 YI-TING QIU&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>邱意婷 YI-TING QIU</strong><br>@mail.ntou.edu.tw
 
-<h1 id="alumni">
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>袁子婷 ZI-TING YUAN</strong><br>@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/yung.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>袁子婷 ZI-TING YUAN</strong><br>@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>袁子婷 ZI-TING YUAN</strong><br />@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>袁子婷 ZI-TING YUAN</strong><br>@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/yung.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>袁子婷 ZI-TING YUAN</strong><br>@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>袁子婷 ZI-TING YUAN</strong><br />@mail.ntou.edu.tw
+
+      </figcaption>
+    
+  </figure>
+</div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;袁子婷 ZI-TING YUAN&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/yung.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;袁子婷 ZI-TING YUAN&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>袁子婷 ZI-TING YUAN</strong><br>@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>張士成 SHI-CHENG ZHANG</strong><br>@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/chang.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>張士成 SHI-CHENG ZHANG</strong><br>@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>張士成 SHI-CHENG ZHANG</strong><br />@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>張士成 SHI-CHENG ZHANG</strong><br>@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/chang.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>張士成 SHI-CHENG ZHANG</strong><br>@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>張士成 SHI-CHENG ZHANG</strong><br />@mail.ntou.edu.tw
+
+      </figcaption>
+    
+  </figure>
+</div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;張士成 SHI-CHENG ZHANG&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/chang.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;張士成 SHI-CHENG ZHANG&lt;/strong&gt;&lt;br&gt;@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>張士成 SHI-CHENG ZHANG</strong><br>@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
+    
+  </div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <h1 id="alumni">
 <i class="icon fa-solid fa-users"></i>Alumni</h1>
 
-<div class="feature">
-  <a class="feature-image" aria-label="洪于策 Yu-Tse Hung">
-    <img src="/ntou-lcl/images/hong.jpg" loading="lazy" alt="洪于策 Yu-Tse Hung" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+<style>
+    /* 控制每個圖片區塊的基本樣式 */
+    .image-grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px; /* 圖片之間的間距 */
+    }
+  
+    .image-grid-item {
+      flex-basis: calc(25% - 20px); /* 每行4個 */
+      text-align: center;
+    }
+  
+    /* 當視窗變窄時，自動變為每行3個 */
+    @media (max-width: 1024px) {
+      .image-grid-item {
+        flex-basis: calc(33.33% - 20px); /* 每行3個 */
+      }
+    }
+  
+    /* 當視窗變得更窄時，變為每行2個 */
+    @media (max-width: 768px) {
+      .image-grid-item {
+        flex-basis: calc(50% - 20px); /* 每行2個 */
+      }
+    }
+  
+    /* 當視窗最窄時，變為每行1個 */
+    @media (max-width: 480px) {
+      .image-grid-item {
+        flex-basis: calc(100% - 20px); /* 每行1個 */
+      }
+    }
+  </style>
+
+<div class="image-grid-container">
+    
+    
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>洪于策 Yu-Tse Hung</strong><br>11053035@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/hong.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>洪于策 Yu-Tse Hung</strong><br>11053035@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+    >
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">洪于策 Yu-Tse Hung</p>
-    
-    
-<p>Mail: 11053035@mail.ntou.edu.tw</p>
+  
+    <figcaption class="figure-caption">
+      <strong>洪于策 Yu-Tse Hung</strong><br />11053035@mail.ntou.edu.tw
 
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>洪于策 Yu-Tse Hung</strong><br>11053035@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/hong.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>洪于策 Yu-Tse Hung</strong><br>11053035@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-  </div>
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>洪于策 Yu-Tse Hung</strong><br />11053035@mail.ntou.edu.tw
+
+      </figcaption>
+    
+  </figure>
 </div>
-
-<div class="feature">
-  <a class="feature-image" aria-label="陳建謀 Jian-Mou Chen">
-    <img src="/ntou-lcl/images/cheng.jpg" loading="lazy" alt="陳建謀 Jian-Mou Chen" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;洪于策 Yu-Tse Hung&lt;/strong&gt;&lt;br&gt;11053035@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/hong.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;洪于策 Yu-Tse Hung&lt;/strong&gt;&lt;br&gt;11053035@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">陳建謀 Jian-Mou Chen</p>
-    
-    
-<p>Mail: 11153012@mail.ntou.edu.tw</p>
+  
+    <figcaption class="figure-caption">
+      <strong>洪于策 Yu-Tse Hung</strong><br>11053035@mail.ntou.edu.tw
 
+    </figcaption>
+  
+</figure>
+      </div>
+    
+      <div class="image-grid-item">
+        
+        
+        
+        <!-- 合併 name 和 email 到 caption 中 -->
+        
+        <!--<figure class="figure">
+  <a
+    
+    class="figure-image"
+    aria-label="<strong>陳建謀 Jian-Mou Chen</strong><br>11153012@mail.ntou.edu.tw"
+  >
+    <img
+      src="/ntou-lcl/images/cheng.jpg"
+      style="
+        width: auto;
+        max-height: unset;
+      "
+      alt="<strong>陳建謀 Jian-Mou Chen</strong><br>11153012@mail.ntou.edu.tw"
+      loading="lazy"
+      onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
 
-  </div>
+    >
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>陳建謀 Jian-Mou Chen</strong><br />11153012@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+-->
+<!--
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      
+      class="figure-image"
+      aria-label="<strong>陳建謀 Jian-Mou Chen</strong><br>11153012@mail.ntou.edu.tw"
+    >
+      <img
+        src="/ntou-lcl/images/cheng.jpg"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="<strong>陳建謀 Jian-Mou Chen</strong><br>11153012@mail.ntou.edu.tw"
+        loading="lazy"
+        onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;"
+
+      >
+    </a>
+    
+      <figcaption class="figure-caption">
+        <strong>陳建謀 Jian-Mou Chen</strong><br />11153012@mail.ntou.edu.tw
+
+      </figcaption>
+    
+  </figure>
 </div>
+-->
+<figure class="figure" style="text-align: center; margin: 10px;">
+  <a class="figure-image" aria-label="&lt;strong&gt;陳建謀 Jian-Mou Chen&lt;/strong&gt;&lt;br&gt;11153012@mail.ntou.edu.tw">
+    <img src="/ntou-lcl/images/cheng.jpg" style="
+        width: 200px;
+        height: 225px;
+        object-fit: cover;
+      " alt="&lt;strong&gt;陳建謀 Jian-Mou Chen&lt;/strong&gt;&lt;br&gt;11153012@mail.ntou.edu.tw" loading="lazy" onerror="this.src = '/ntou-lcl/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      <strong>陳建謀 Jian-Mou Chen</strong><br>11153012@mail.ntou.edu.tw
+
+    </figcaption>
+  
+</figure>
+      </div>
+    
+  </div>
+
+<!-- 
 
 <div class="grid" data-style="square">
   
 
 </div>
+ -->
   </section>
 
 
