@@ -70,39 +70,21 @@ Email: mingli@mail.ntou.edu.tw
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
-{% capture text1 %}
-年級: 碩二  
-Mail: 11153087@mail.ntou.edu.tw
-{% endcapture %}
-
-{% capture text2 %}
-年級: 碩一  
-Mail: michael0922851688@gmail.com
-{% endcapture %}
-
-{% capture text3 %}
-年級: 碩三  
-Mail: 11253010@mail.ntou.edu.tw
-{% endcapture %}
-
+{% assign images = 
+  [
+    { "image": "images/apple.jpg", "title": "曾聖雅 Sheng-Ya Tseng", "text": "Mail: 11153087@mail.ntou.edu.tw" },
+    { "image": "images/su.jpg", "title": "蘇冠楷 Guan-Kai Su", "text": "Mail: michael0922851688@gmail.com" },
+    { "image": "images/lee.jpg", "title": "李政霖 Cheng-Lin Li", "text": "Mail: 11253010@mail.ntou.edu.tw" }
+  ]
+%}
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-  {% include feature.html
-    image="images/chae.jpg"
-    title="蔡宗佑 Zong-You Cai"
-    text=text1
-  %}
-
-  {% include feature.html
-    image="images/su.jpg"
-    title="蘇冠楷 Guan-Kai Su"
-    text=text2
-  %}
-
-  {% include feature.html
-    image="images/lee.jpg"
-    title="李政霖 Cheng-Lin Li"
-    text=text3
-  %}
+  {% for item in images %}
+    {% include feature.html 
+      image=item.image
+      title=item.title
+      text=item.text
+    %}
+  {% endfor %}
 </div>
 
 {% capture text %}
