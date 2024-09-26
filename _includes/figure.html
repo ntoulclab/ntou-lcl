@@ -1,4 +1,4 @@
-<figure class="figure">
+<!--<figure class="figure">
   <a
     {% if include.link %}
       href="{{ include.link | relative_url }}"
@@ -23,3 +23,32 @@
     </figcaption>
   {% endif %}
 </figure>
+-->
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+  <figure class="figure" style="text-align: center; margin: 10px;">
+    <a
+      {% if include.link %}
+        href="{{ include.link | relative_url }}"
+      {% endif %}
+      class="figure-image"
+      aria-label="{{ include.caption | default: "figure link" }}"
+    >
+      <img
+        src="{{ include.image | relative_url }}"
+        style="
+          width: 150px; /* 固定寬度 */
+          height: 150px; /* 固定高度 */
+          object-fit: cover; /* 保持比例並裁剪多餘部分 */
+        "
+        alt="{{ include.caption | default: 'figure image' }}"
+        loading="lazy"
+        {% include fallback.html %}
+      >
+    </a>
+    {% if include.caption %}
+      <figcaption class="figure-caption">
+        {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+      </figcaption>
+    {% endif %}
+  </figure>
+</div>
