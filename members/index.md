@@ -40,7 +40,6 @@ Email: mingli@mail.ntou.edu.tw
 # {% include icon.html icon="fa-solid fa-users" %}​Master Students
 ## 碩二
 {% include section.html %}
-{% capture text %}
 <table align="center" class="image" width="100%" style="border:0px solid white; width:100%;">
   <tr style="border: 0px;">        
     <td width="33%" style="border:0px; width:33.33%; text-align: center;">
@@ -57,7 +56,6 @@ Email: mingli@mail.ntou.edu.tw
     </td>       
   </tr>
 </table>
-{% endcapture %}
 
 {% capture col1 %}
 {%
