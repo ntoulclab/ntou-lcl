@@ -42,33 +42,28 @@ Email: mingli@mail.ntou.edu.tw
 {% include section.html %}
 
 {% capture col1 %}
-{%
-  include figure.html
-  image="images/apple.jpg"
-  caption="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
-  style="width: 100px !important; height: 100px !important; object-fit: cover !important;"
-%}
+  <div style="text-align:center;">
+    <img src="images/apple.jpg" alt="曾聖雅" style="width: 100px !important; height: 100px !important; object-fit: cover;">
+    <p>曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw</p>
+  </div>
 {% endcapture %}
 
 {% capture col2 %}
-{%
- <div style="text-align:center;">
+  <div style="text-align:center;">
     <img src="images/su.jpg" alt="蘇冠楷" style="width: 100px !important; height: 100px !important; object-fit: cover;">
     <p>蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com</p>
   </div>
-%}
 {% endcapture %}
 
 {% capture col3 %}
-{%
   <div style="text-align:center;">
     <img src="images/lee.jpg" alt="李政霖" style="width: 100px !important; height: 100px !important; object-fit: cover;">
     <p>李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw</p>
   </div>
-%}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
+
 
 {% capture text %}
 年級: 碩二  
