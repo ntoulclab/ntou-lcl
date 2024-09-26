@@ -52,19 +52,19 @@ Email: mingli@mail.ntou.edu.tw
 
 {% capture col2 %}
 {%
-  include figure.html
-  image="images/su.jpg"
-  caption="蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com"
-  style="width: 100px !important; height: 100px !important; object-fit: cover !important;"
+ <div style="text-align:center;">
+    <img src="images/su.jpg" alt="蘇冠楷" style="width: 100px !important; height: 100px !important; object-fit: cover;">
+    <p>蘇冠楷 Guan-Kai Su<br>Mail: michael0922851688@gmail.com</p>
+  </div>
 %}
 {% endcapture %}
 
 {% capture col3 %}
 {%
-  include figure.html
-  image="images/lee.jpg"
-  caption="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
-  style="width: 100px !important; height: 100px !important; object-fit: cover !important;"
+  <div style="text-align:center;">
+    <img src="images/lee.jpg" alt="李政霖" style="width: 100px !important; height: 100px !important; object-fit: cover;">
+    <p>李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw</p>
+  </div>
 %}
 {% endcapture %}
 
