@@ -24,6 +24,7 @@
   {% endif %}
 </figure>
 -->
+<!--
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
   <figure class="figure" style="text-align: center; margin: 10px;">
     <a
@@ -52,3 +53,28 @@
     {% endif %}
   </figure>
 </div>
+-->
+<figure class="feature" style="text-align: center; margin: 10px;">
+  <a
+    {% if include.link %}
+      href="{{ include.link | relative_url }}"
+    {% endif %}
+    class="feature-image"
+    aria-label="{{ include.title | default: "feature link" }}"
+  >
+    <img
+      src="{{ include.image | relative_url }}"
+      style="
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      "
+      alt="{{ include.title | default: "feature image" }}"
+      loading="lazy"
+    >
+  </a>
+  <figcaption class="feature-caption">
+    <h3>{{ include.title }}</h3>
+    <p>{{ include.text }}</p>
+  </figcaption>
+</figure>
