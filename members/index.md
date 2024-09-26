@@ -64,7 +64,7 @@ Email: mingli@mail.ntou.edu.tw
   include figure.html
   image="images/lee.jpg"
   caption="李政霖 Cheng-Lin Li<br>Mail: 11253010@mail.ntou.edu.tw"
-  style="width: 300px; height: 300px; object-fit: cover;"
+  style="width: 50px; height: 50px; object-fit: cover;"
 %}
 {% endcapture %}
 
