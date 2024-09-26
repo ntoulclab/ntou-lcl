@@ -46,7 +46,7 @@ Email: mingli@mail.ntou.edu.tw
   include figure.html
   image="images/apple.jpg"
   caption="曾聖雅 Sheng-Ya Tseng<br>Mail: 11153087@mail.ntou.edu.tw"
-  style="width: 300px; height: 300px; object-fit: cover;"
+  style="width: 100px !important; height: 100px !important; object-fit: cover !important;"
 %}
 {% endcapture %}
 
