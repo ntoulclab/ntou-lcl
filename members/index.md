@@ -51,7 +51,6 @@ Email: mingli@mail.ntou.edu.tw
 
 <!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}​In-service Master Students
-=
 {% assign images = "images/kwen.jpg|images/CY.jpg|images/JASON.jpg" | split: "|" %}
 
 {% assign names = "鍾文幀 WEN-ZHENG ZHONG|陳羿宏 YI-HONG CHEN|李至偉 ZHI-WEI LI" | split: "|" %}
