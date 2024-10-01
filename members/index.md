@@ -42,11 +42,11 @@ Email: mingli@mail.ntou.edu.tw
 {% include image-grid.html %}
 
 ## 碩一
-{% assign images = "images/bo.jpg|images/TINTU.jpg|images/li2.jpg|images/lin.jpg|images/huang.jpg|images/tin.jpg|images/white.jpg" | split: "|" %}
+{% assign images = "images/bo.jpg|images/TINTU.jpg|images/li2.jpg|images/lin.jpg|images/huang.jpg|images/tin.jpg|images/anyat.jpg|images/shung.jpg" | split: "|" %}
 
-{% assign names = "陳柏帆 Bo-Fan Chen|丁昱鈞 YU-JUN DING|李登峰 DENG-FENG LI|林易廷 YI-TING LIN|黃冠霖 GUAN-LIN HUANG|戴廷宇 TING-YU DAI|胡安亞 ANAYAT" | split: "|" %}
+{% assign names = "陳柏帆 Bo-Fan Chen|丁昱鈞 YU-JUN DING|李登峰 DENG-FENG LI|林易廷 YI-TING LIN|黃冠霖 GUAN-LIN HUANG|戴廷宇 TING-YU DAI|胡安亞 ANAYAT|張皓翔 HAO-XIANG ZHANG" | split: "|" %}
 
-{% assign emails = "401005brian@gmail.com|11353003@email.ntou.edu.tw|A24669855@gmail.com|Zed10487@gmail.com|11353007@mail.ntou.edu.tw|somewhitedie@gmail.com|@mail.ntou.edu.tw" | split: "|" %}
+{% assign emails = "401005brian@gmail.com|11353003@email.ntou.edu.tw|A24669855@gmail.com|Zed10487@gmail.com|11353007@mail.ntou.edu.tw|somewhitedie@gmail.com|@mail.ntou.edu.tw|11353117@email.ntou.edu.tw" | split: "|" %}
 {% include image-grid.html %}
 
 <!-- section break -->
