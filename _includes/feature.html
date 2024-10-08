@@ -15,8 +15,8 @@
       src="{{ include.image | relative_url }}"      
       loading="lazy"
       alt="{{ include.caption | default: 'figure image' }}"
+      style="width: 600px; height: auto;"
       {% include fallback.html %}
-      style="width: 300px; height: auto;"
     >
   </a>
   <div class="feature-text">
