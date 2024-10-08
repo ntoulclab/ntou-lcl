@@ -42,7 +42,7 @@ Email: mingli@mail.ntou.edu.tw
 {% include image-grid.html %}
 
 ## 碩一
-{% assign images = "images/bo.jpg|images/TINTU.jpg|images/li2.jpg|images/lin.jpg|images/huang.jpg|images/tin.jpg|images/anyat.jpg|images/shung.jpg" | split: "|" %}
+{% assign images = "images/bofan.jpg|images/TINTU.jpg|images/li2.jpg|images/lin.jpg|images/huang.jpg|images/tin.jpg|images/anyat.jpg|images/shung.jpg" | split: "|" %}
 
 {% assign names = "陳柏帆 Bo-Fan Chen|丁昱鈞 YU-JUN DING|李登峰 DENG-FENG LI|林易廷 YI-TING LIN|黃冠霖 GUAN-LIN HUANG|戴廷宇 TING-YU DAI|胡安亞 ANAYAT|張皓翔 HAO-XIANG ZHANG" | split: "|" %}
 
