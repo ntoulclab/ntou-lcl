@@ -54,8 +54,9 @@
 }
 
 /* 鼠標懸停顯示下拉菜單 */
-.nav-item:hover .dropdown-menu {
-  display: block; /* 當鼠標懸停時顯示 */
+.nav-item:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
 }
 
 /*# sourceMappingURL=navbar.css.map */
