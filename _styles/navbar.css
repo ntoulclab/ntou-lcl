@@ -31,13 +31,14 @@
 .dropdown-menu {
   list-style: none;
   position: absolute;
-  top: 80%; /* 放在主導航的下方 */
+  top: 100%;
   left: 0;
   background-color: #444;
   padding: 10px 0;
-  display: none; /* 默認隱藏 */
+  display: none;
   min-width: 300px;
   z-index: 1000;
+  transform: translateY(-20px);
 }
 
 .dropdown-menu li {
