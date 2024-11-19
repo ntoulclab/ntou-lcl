@@ -37,7 +37,7 @@ subcategories:
 {%
   include feature.html
   image="images/Multi-UAV.png"
-  style="font-size: 2em; width: 500%;"
+  style="font-size: 2em; width: 900%;"
 %}
 
 ## [基於影像辨識之後車防撞警示邊緣計算輔助系統](/ntou-lcl/competition/Image_Based)
@@ -45,6 +45,6 @@ subcategories:
 {%
   include feature.html
   image="images/Image-Based.png"
-  style="font-size: 2em; width: 500%;"
+  style="font-size: 2em; width: 900%;"
 %}
 
