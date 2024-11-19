@@ -1,0 +1,58 @@
+/* Competition 下拉菜單樣式 */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  position: relative; /* 為了定位下拉菜單 */
+  margin-right: 20px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-item a:hover {
+  background-color: #555;
+}
+
+/* 下拉菜單隱藏 */
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%; /* 放在主導航的下方 */
+  left: 0;
+  background-color: #444;
+  padding: 10px 0;
+  display: none; /* 默認隱藏 */
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 5px 20px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #666;
+}
+
+/* 鼠標懸停顯示下拉菜單 */
+.nav-item:hover .dropdown-menu {
+  display: block; /* 當鼠標懸停時顯示 */
+}
