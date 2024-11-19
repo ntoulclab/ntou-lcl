@@ -5,9 +5,9 @@ nav:
   tooltip: Competition Areas
   subcategories:
   -title: 基於多無人機編隊與影像辨識之遇難者搜救與定位系統
-  url: "/Competition/Multi-UAV"
+  url: "/Competition/Multi_Uav"
   -title: 基於多無人機編隊與影像辨識之遇難者搜救與定位系統
-  url: "Competition/Image-Based"
+  url: "Competition/Image_Based"
 ---
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
