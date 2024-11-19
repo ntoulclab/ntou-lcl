@@ -17,7 +17,6 @@ subcategories:
       <ul class="dropdown-menu">
         {% for subcategory in page.subcategories %}
             <li><a href="{{ subcategory.url }}">{{ subcategory.title }}</a></li>
-          {% endif %}
         {% endfor %}
       </ul>
     </li>
@@ -31,7 +30,7 @@ Explore our research areas:
 <ul>
 {% for subcategory in page.subcategories %}
   <li>
-    <a href="{{ subcategory.url }}">{{ subcategory.title }}</a> - {{ subcategory.description }}
+    <a href="{{ subcategory.url }}">{{ subcategory.title }}</a>
   </li>
 {% endfor %}
 </ul>
