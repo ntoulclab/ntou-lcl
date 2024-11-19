@@ -1,19 +1,18 @@
-@charset "UTF-8";
-/* Competition 下拉菜單樣式 */
 .navbar {
   background-color: #333;
   padding: 10px;
+  text-align: center;
 }
 
 .nav-list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  display: flex;
+  display: inline-flex;
 }
 
 .nav-item {
-  position: relative; /* 為了定位下拉菜單 */
+  position: relative;
   margin-right: 20px;
 }
 
@@ -36,9 +35,9 @@
   background-color: #444;
   padding: 10px 0;
   display: none;
-  min-width: 300px;
+  min-width: 400px;
   z-index: 1000;
-  transform: translateY(-20px);
+  text-align: center;
 }
 
 .dropdown-menu li {
@@ -54,7 +53,6 @@
   background-color: #666;
 }
 
-/* 鼠標懸停顯示下拉菜單 */
 .nav-item:hover .dropdown-menu,
 .dropdown-menu:hover {
   display: block;
