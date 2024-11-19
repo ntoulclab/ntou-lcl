@@ -10,9 +10,9 @@ parent: Competition
 {% endcapture %}
 {%
   include feature.html
-  image="images/multi-UAV.jpg"
+  image="images/Multi-UAV.png"
   title=""
   flip=true
   text=text
 %}
-<iframe width="512" height="288" src="https://www.youtube.com/watch?v=G6fGhG5sQbs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="512" height="288" src="https://www.youtube.com/embed/G6fGhG5sQbs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
