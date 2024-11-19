@@ -13,7 +13,7 @@ subcategories:
 <nav class="navbar">
   <ul class="nav-list">
     <li class="nav-item dropdown">
-      <a href="/Competition/">Competition</a>
+      <a href="/ntou-lcl/Competition/">Competition</a>
       <ul class="dropdown-menu">
         {% for subcategory in site.pages %}
           {% if subcategory.parent == "Competition" %}
