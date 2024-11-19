@@ -9,6 +9,17 @@ subcategories:
   - title: 基於影像辨識之後車防撞警示邊緣計算輔助系統
     url: "/Competition/Image_Based"
 ---
+# Research Areas
+
+Explore our research areas:
+
+<ul>
+{% for subcategory in page.subcategories %}
+  <li>
+    <a href="{{ subcategory.url }}">{{ subcategory.title }}</a> - {{ subcategory.description }}
+  </li>
+{% endfor %}
+</ul>
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
