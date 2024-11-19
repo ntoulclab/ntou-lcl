@@ -35,7 +35,7 @@ subcategories:
 
 
 {% capture text %}
-基於多無人機編隊與影像辨識之遇難者搜救與定位系統
+<a href="/ntou-lcl/competition/Multi_UAV">基於多無人機編隊與影像辨識之遇難者搜救與定位系統</a>
 {% endcapture %}
 {%
   include feature.html
@@ -46,7 +46,7 @@ subcategories:
 %}
 
 {% capture text %}
-基於影像辨識之後車防撞警示邊緣計算輔助系統
+<a href="/ntou-lcl/competition/Image_Based">基於影像辨識之後車防撞警示邊緣計算輔助系統</a>
 {% endcapture %}
 {%
   include feature.html
