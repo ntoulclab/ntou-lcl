@@ -9,6 +9,22 @@ subcategories:
   - title: 基於影像辨識之後車防撞警示邊緣計算輔助系統
     url: "/ntou-lcl/competition/Image_Based"
 ---
+
+<nav class="navbar">
+  <ul class="nav-list">
+    <li class="nav-item dropdown">
+      <a href="/Competition/">Competition</a>
+      <ul class="dropdown-menu">
+        {% for subcategory in site.pages %}
+          {% if subcategory.parent == "Competition" %}
+            <li><a href="{{ subcategory.url }}">{{ subcategory.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 # Research Areas
 
 Explore our research areas:
