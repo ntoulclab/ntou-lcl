@@ -9,6 +9,7 @@ $wrap: 1600px;
   align-items: center;
   gap: 40px;
   margin: 40px 0;
+  overflow: hidden;
 }
 
 .feature-image {
@@ -29,6 +30,10 @@ $wrap: 1600px;
   flex-grow: 1;
   max-width: 600px;
   word-break: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  overflow: hidden;
+
 }
 
 .feature-title {
