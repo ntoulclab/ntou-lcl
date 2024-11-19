@@ -40,14 +40,15 @@ subcategories:
   image="images/Multi-UAV.png"
   title=""
   flip=true
+  text=""
 %}
 
 ## <a href="/ntou-lcl/competition/Image_Based">基於影像辨識之後車防撞警示邊緣計算輔助系統</a>
-
 {% endcapture %}
 {%
   include feature.html
   image="images/Image-Based.png"
   title=""
   flip=true
+  text=""
 %}
