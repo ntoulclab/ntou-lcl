@@ -2,7 +2,7 @@
 title: 基於影像辨識之後車防撞警示邊緣計算輔助系統
 parent: Competition
 nav:
-  order: 1
+  order: 2
 ---
 # Robotics Research
 
