@@ -3,7 +3,7 @@ title: Competition
 nav:
   order: 7
   tooltip: Competition Areas
-subcategories:
+subcategories: 
   -title: 基於多無人機編隊與影像辨識之遇難者搜救與定位系統
    url: "/Competition/Multi_UAV"
   -title: 基於影像辨識之後車防撞警示邊緣計算輔助系統
