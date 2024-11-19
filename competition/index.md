@@ -5,9 +5,9 @@ nav:
   tooltip: Competition Areas
 subcategories:
   - title: 基於多無人機編隊與影像辨識之遇難者搜救與定位系統
-    url: "/competition/Multi_UAV"
+    url: "/Multi_UAV"
   - title: 基於影像辨識之後車防撞警示邊緣計算輔助系統
-    url: "/competition/Image_Based"
+    url: "/Image_Based"
 ---
 # Research Areas
 
