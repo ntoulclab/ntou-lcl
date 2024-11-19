@@ -33,7 +33,6 @@ subcategories:
 {% endfor %}
 </ul>
 
-{% endcapture %}
 {%
   include feature.html
   image="images/Multi-UAV.png"
@@ -42,7 +41,6 @@ subcategories:
   text=""
 %}
 
-{% endcapture %}
 {%
   include feature.html
   image="images/Image-Based.png"
