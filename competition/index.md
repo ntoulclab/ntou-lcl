@@ -13,10 +13,9 @@ subcategories:
 <nav class="navbar">
   <ul class="nav-list">
     <li class="nav-item dropdown">
-      <a href="/ntou-lcl/Competition/">Competition</a>
+      <a href="/ntou-lcl/competition/">Competition</a>
       <ul class="dropdown-menu">
-        {% for subcategory in site.pages %}
-          {% if subcategory.parent == "Competition" %}
+        {% for subcategory in page.subcategories %}
             <li><a href="{{ subcategory.url }}">{{ subcategory.title }}</a></li>
           {% endif %}
         {% endfor %}
