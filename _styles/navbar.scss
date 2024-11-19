@@ -29,12 +29,12 @@
   background-color: #555;
 }
 
-/* 下拉菜單隱藏 */
 .dropdown-menu {
   list-style: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 90%;
+  left: 50;
+  transform: translate(-50%, -30px);
   background-color: #444;
   padding: 10px 0;
   display: none;
