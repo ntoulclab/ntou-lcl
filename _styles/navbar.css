@@ -31,10 +31,11 @@
   position: absolute;
   top: 90%;
   left: 0;
+  transform: translate(-50%, -10px);
   background-color: #444;
   padding: 10px 0;
   display: none;
-  min-width: 400px;
+  min-width: 600px;
   z-index: 1000;
   text-align: center;
 }
