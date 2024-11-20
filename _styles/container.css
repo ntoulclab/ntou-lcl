@@ -20,7 +20,7 @@
 }
 
 .image img {
-  max-width: 130%;
+  max-width: 512px;
   height: auto;
 }
 
