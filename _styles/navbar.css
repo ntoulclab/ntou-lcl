@@ -35,7 +35,7 @@
   background-color: #444;
   padding: 10px 0;
   display: none;
-  min-width: 550px;
+  min-width: 500px;
   z-index: 1000;
   text-align: center;
 }
