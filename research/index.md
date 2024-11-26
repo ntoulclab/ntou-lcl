@@ -3,6 +3,7 @@ title: Research
 nav:
   order: 2
   tooltip: Research Areas
+  multi_uav_url: "https://ntoulclab.github.io/ntou-lcl/research/"
 ---
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
@@ -14,7 +15,7 @@ Cooperative Control of MAS
 
 Formation Control of UAVs  
 
-Multi-UAV System Design and Applications  
+[Multi-UAV System Design and Applications]({{ page.multi_uav_url }})
 
 Nonlinear and Adaptive Control Theory
 
