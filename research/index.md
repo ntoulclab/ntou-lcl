@@ -3,7 +3,7 @@ title: Research
 nav:
   order: 2
   tooltip: Research Areas
-  UAV_System_Design: "https://ntoulclab.github.io/ntou-lcl/research/UAV_System_Design/"
+  UAV_System_Design: "https://ntoulclab.github.io/ntou-lcl/research/Design_and_Applications/"
 ---
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
