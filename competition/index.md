@@ -1,3 +1,4 @@
+<!--
 ---
 title: Competition
 nav:
@@ -47,4 +48,4 @@ subcategories:
   image="images/Image-Based.png"
   style="font-size: 2em; width: 900%;"
 %}
-
+-->
