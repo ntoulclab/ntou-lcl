@@ -3,7 +3,7 @@ title: Research
 nav:
   order: 2
   tooltip: Research Areas
-  UAV_System_Design: "/research/Design_and_Applications/"
+  UAV_System_Design: "/ntou-lcl/research/Design_and_Applications"
 ---
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
