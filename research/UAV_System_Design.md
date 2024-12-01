@@ -5,7 +5,8 @@ parent: Research
 
 ## Multi-UAV System Design and Applications
 {% capture text %}
-[Multi-UAV System Design and Applications]({{Design_and_Applications}})
+[Multi-UAV Formation-Based Search and Rescue System for Victim Localization Using Image Recognition]({{/ntou-lcl/research/UAV_System_Design
+/Design_and_Applications}})
 {% endcapture %}
 {%
   include feature.html
