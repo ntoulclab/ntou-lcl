@@ -19,7 +19,7 @@ Cooperative Control of MAS
 
 Formation Control of UAVs  
 
-[Multi-UAV System Design and Applications]({{ UAV_System_Design }})
+[Multi-UAV System Design and Applications](/ntou-lcl/research/UAV_System_Design)
 
 Nonlinear and Adaptive Control Theory
 
