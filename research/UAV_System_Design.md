@@ -7,7 +7,8 @@ subcategories:
 ---
 
 ## Multi-UAV System Design and Applications
-
-{% for subcategory in page.subcategories %}
-  <li><a href="{{ subcategory.url }}">{{ subcategory.title }}</a></li>
-{% endfor %}
+<ul>
+  {% for subcategory in page.subcategories %}
+    <li><a href="{{ subcategory.url }}">{{ subcategory.title }}</a></li>
+  {% endfor %}
+</ul>
