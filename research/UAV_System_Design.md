@@ -1,5 +1,5 @@
 ---
-title: 基於多無人機編隊與影像辨識之遇難者搜救與定位系統
+title: UAV_System_Design
 parent: Research
 subcategories:
   - title: Design_and_Applications
