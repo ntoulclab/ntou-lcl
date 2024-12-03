@@ -9,7 +9,7 @@ parent: UAV_System_Design
     <p>本作品旨在研發一套多無人機的編隊搜救系統。結合路徑規劃、影像辨識、無人機編隊控制。系統的主要創新點在於靈活的編隊控制和協同操作，使無人機可根據任務需求動態調整隊形，並通過距離估計與座標轉換計算出精確經緯度，立刻回傳給搜救人員迅速展開行動。</p>
   </div>
   <div class="image">
-    <img src="../../images/Multi-UAV.png" alt="搜救系統概要">
+    <img src="../../images/uav_sear.png" alt="搜救系統概要">
   </div>
 </div>
 
