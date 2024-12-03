@@ -2,7 +2,7 @@
 title: UAV_System_Design
 parent: Research
 subcategories:
-  - title: 基於多無人機編隊與影像辨識之遇難者搜救與定位系統
+  - title: 基於多無人機編隊與影像辨識搜救與定位系統
     url: "/ntou-lcl/research/UAV_System_Design/Design_and_Applications"
 ---
 
