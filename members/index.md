@@ -61,11 +61,11 @@ Email: mingli@mail.ntou.edu.tw
 <!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}Undergraduate Students
 
-{% assign images = "images/yea.jpg|images/hongp.jpg|images/cheao.jpg|images/yung.jpg|images/chang.jpg|images/yongyu.jpg" | split: "|" %}
+{% assign images = "images/yea.jpg|images/hongp.jpg|images/cheao.jpg|images/yung.jpg|images/chang.jpg|images/yongyu.jpg|images/wen.jpg" | split: "|" %}
 
-{% assign names = "葉沛妤 PEI-YU YE|洪珮珈 PEI-JIA HONG|邱意婷 YI-TING QIU|袁子婷 ZI-TING YUAN|張士成 SHI-CHENG ZHANG|莊詠瑜 YONG-YU ZHUANG" | split: "|" %}
+{% assign names = "葉沛妤 PEI-YU YE|洪珮珈 PEI-JIA HONG|邱意婷 YI-TING QIU|袁子婷 ZI-TING YUAN|張士成 SHI-CHENG ZHANG|莊詠瑜 YONG-YU ZHUANG|溫翔宇SIANG-YU WEN" | split: "|" %}
 
-{% assign emails = "@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw" | split: "|" %}
+{% assign emails = "@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw" | split: "|" %}
 {% include image-grid.html %}
 <!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}Alumni
