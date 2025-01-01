@@ -68,14 +68,7 @@ Email: mingli@mail.ntou.edu.tw
 {% assign emails = "@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw" | split: "|" %}
 {% include image-grid.html %}
 <!-- section break -->
-# {% include icon.html icon="fa-solid fa-users" %}Alumni
-
-{% assign images = "images/hong.jpg|images/cheng.jpg" | split: "|" %}
-
-{% assign names = "洪于策 Yu-Tse Hung|陳建謀 Jian-Mou Chen" | split: "|" %}
-
-{% assign emails = "11053035@mail.ntou.edu.tw|11153012@mail.ntou.edu.tw" | split: "|" %}
-{% include image-grid.html %}
+# [Alumnis](ntou-lcl/members/Alumni)
 
 <!-- {% capture content %}
 
