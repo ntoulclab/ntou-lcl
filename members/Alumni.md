@@ -1,8 +1,7 @@
 ---
-title: Alumni
+title: Alumnis
 ---
-# {% include icon.html icon="fa-solid fa-users" %}​Master Students
-# {% include icon.html icon="fa-solid fa-users" %}Alumni
+# {% include icon.html icon="fa-solid fa-users" %}Alumnis
 ## 2024
 {% assign images = "images/hong.jpg|images/cheng.jpg" | split: "|" %}
 
