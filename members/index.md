@@ -68,7 +68,7 @@ Email: mingli@mail.ntou.edu.tw
 {% assign emails = "@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw|@mail.ntou.edu.tw" | split: "|" %}
 {% include image-grid.html %}
 <!-- section break -->
-# [Alumnis](/ntou-lcl/members/Alumni)
+# {% include icon.html icon="fa-solid fa-users" %}[Alumnis](/ntou-lcl/members/Alumni)
 
 <!-- {% capture content %}
 
