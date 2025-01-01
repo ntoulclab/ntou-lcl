@@ -2,7 +2,7 @@
 title: Alumnis
 ---
 # {% include icon.html icon="fa-solid fa-users" %}Alumnis
-## 2024
+## 2024畢業生
 {% assign images = "images/hong.jpg|images/cheng.jpg" | split: "|" %}
 
 {% assign names = "洪于策 Yu-Tse Hung|陳建謀 Jian-Mou Chen" | split: "|" %}
