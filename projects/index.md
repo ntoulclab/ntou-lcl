@@ -29,3 +29,14 @@ nav:
   image="images/moon2.jpg"
   style="font-size: 2em; width: 300%;"
 %}
+
+## 2025 1月 實驗室尾牙
+
+{% capture text %}
+
+{% endcapture %}
+{%
+  include feature.html
+  image="images/banquet.jpg"
+  style="font-size: 2em; width: 300%;"
+%}
