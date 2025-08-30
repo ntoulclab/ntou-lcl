@@ -9,7 +9,7 @@ nav:
 
 ## Journal Paper
 1.	<u>M. -L. Chiang</u>, C. -M. Huang* and J. -F. Liao, "Multimodal Human Action Recognition Base on Sparse Joints Graph Convolutional Network and Dynamic Image ROI Sampling," in ***IEEE Sensors Journal***, 2025,  DOI:10.1109/JSEN.2025.3587646.
-2.	C.-M. Huang, <u>M.-L. Chiang</u>*, and B.-W. Jiang, “Color and Thermal Camera Visual Tracking with Fuzzy Fusion Inference and Application to Human Body Temperature Monitoring System,” in  ***Internal Journal of Fuzzy Systems***, 2025,  DOI:10.1007/s40815-025-02131-9.
+2.	C.-M. Huang, <u>M.-L. Chiang</u>*, and B.-W. Jiang, “Color and Thermal Camera Visual Tracking with Fuzzy Fusion Inference and Application to Human Body Temperature Monitoring System,” in  ***Internal Journal of Fuzzy Systems*** , 2025,  DOI:10.1007/s40815-025-02131-9.
 3.	EY Chia, YK Chang, YC Chang, YL Chen, TC Chien, <u>ML Chiang</u>, LC Fu, Assist-As-Needed rehabilitation using velocity field for upper limb exoskeleton, in ***Mechatronics***, 2024.
 4.	Yu-Wen Chen, <u>Ming-Li Chiang</u>, and Li-Chen Fu (2022, Jul) Three-Dimensional Maneuver Control of Multiagent Systems with Constrained Input, ***IEEE Transactions on Cybernetics***, Jul, 2022. (SCI, Rank 1/63, automation and control) DOI:10.1109/TCYB.2022.3165767
 5.	<u>Ming-Li Chiang</u>, Yu-Wen Chen, Chin-Sheng Chen, Shun-Hung Tsai, “Distributed Formation Control of Multiagent Systems with Speciﬁed Order” in ***IEEE Transactions on Systems, Man, and Cybernetics: Systems***, vol. 52, no. 1, pp. 301-310, Jan. 2022. (SCI, Automation & control systems, Rank: **1/63**, (1%))
