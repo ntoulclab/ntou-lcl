@@ -35,26 +35,27 @@ Email: mingli@mail.ntou.edu.tw
 
 <!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}​Master Students
-## 碩二
-{% assign images = "images/apple.jpg|images/su.jpg|images/lee.jpg|images/young.jpg|images/yh.jpg|images/chae.jpg|images/mao2.jpg" | split: "|" %}
-{% assign names = "曾聖雅 Sheng-Ya Tseng|蘇冠楷 Guan-Kai Su|李政霖 Cheng-Lin Li|楊啓宏 Qi-Hong Yang|江育翰 Yu-Han Jiang|蔡宗佑 Zong-You Cai|胡惇貿 DUN-MAO HU" | split: "|" %}
-{% assign emails = "11153087@mail.ntou.edu.tw|michael0922851688@gmail.com|11253010@mail.ntou.edu.tw|11253037@mail.ntou.edu.tw|11253039@mail.ntou.edu.tw|11253107@mail.ntou.edu.tw|mouei0906@gmail.com" | split: "|" %}
-{% include image-grid.html %}
 
-## 碩一
+## 碩二
 {% assign images = "images/bofan.jpg|images/TINTU.jpg|images/li2.jpg|images/lin.jpg|images/huang.jpg|images/tin.jpg|images/anyat.jpg|images/shung.jpg" | split: "|" %}
 
-{% assign names = "陳柏帆 Bo-Fan Chen|丁昱鈞 YU-JUN DING|李登峰 DENG-FENG LI|林易廷 YI-TING LIN|黃冠霖 GUAN-LIN HUANG|戴廷宇 TING-YU DAI|胡安亞 ANAYAT|張皓翔 HAO-XIANG ZHANG" | split: "|" %}
+{% assign names = "陳柏帆 BO-FAN CHEN|丁昱鈞 YU-JUN DING|李登峰 DENG-FENG LI|林易廷 YI-TING LIN|黃冠霖 GUAN-LIN HUANG|戴廷宇 TING-YU DAI|胡安亞 ANAYAT|張皓翔 HAO-XIANG ZHANG" | split: "|" %}
 
 {% assign emails = "401005brian@gmail.com|11353003@email.ntou.edu.tw|A24669855@gmail.com|Zed10487@gmail.com|11353007@mail.ntou.edu.tw|somewhitedie@gmail.com|@mail.ntou.edu.tw|11353117@email.ntou.edu.tw" | split: "|" %}
 {% include image-grid.html %}
 
+## 碩一
+{% assign images = "images/kuanyu.jpg|images/cheyu.JPG" | split: "|" %}
+
+{% assign names = "王寬裕 KUAN-YU WANG|周哲宇 CHE-YU CHOU" | split: "|" %}
+
+{% assign emails = "vic2667@gmail.com|johnny890222@gmail.com" | split: "|" %}
+{% include image-grid.html %}
 <!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}​In-service Master Students
 {% assign images = "images/kwen.jpg|images/CY.jpg|images/JASON.jpg" | split: "|" %}
 
 {% assign names = "鍾文幀 WEN-ZHENG ZHONG|陳羿宏 YI-HONG CHEN|李至偉 ZHI-WEI LI" | split: "|" %}
-
 
 {% assign emails = "kaitlyshawnrt@gmail.com|junesixteen25@gmail.com|j0988251682@gmail.com" | split: "|" %}
 {% include image-grid.html %}
