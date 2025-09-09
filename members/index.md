@@ -45,9 +45,9 @@ Email: mingli@mail.ntou.edu.tw
 {% include image-grid.html %}
 
 ## 碩一
-{% assign images = "images/kuanyu.jpg|images/cheyu.JPG" | split: "|" %}
+{% assign images = "images/kuanyu.jpg|images/cheyu.JPG|images/kuancheng.jpg|images/yuju.jpg" | split: "|" %}
 
-{% assign names = "王寬裕 KUAN-YU WANG|周哲宇 CHE-YU CHOU" | split: "|" %}
+{% assign names = "王寬裕 KUAN-YU WANG|周哲宇 CHE-YU CHOU|鄒冠程 KUAN-CHENG TSOU|陳郁儒 YU-JU CHEN" | split: "|" %}
 
 {% assign emails = "vic2667@gmail.com|johnny890222@gmail.com" | split: "|" %}
 {% include image-grid.html %}
