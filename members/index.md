@@ -49,7 +49,7 @@ Email: mingli@mail.ntou.edu.tw
 
 {% assign names = "王寬裕 KUAN-YU WANG|周哲宇 CHE-YU CHOU|鄒冠程 KUAN-CHENG TSOU|陳郁儒 YU-JU CHEN" | split: "|" %}
 
-{% assign emails = "vic2667@gmail.com|johnny890222@gmail.com" | split: "|" %}
+{% assign emails = "vic2667@gmail.com|johnny890222@gmail.com|zouguancheng@gmail.com|11353093@mail.ntou.edu.tw" | split: "|" %}
 {% include image-grid.html %}
 <!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}​In-service Master Students
