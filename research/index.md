@@ -8,6 +8,10 @@ subcategories:
     url: "/ntou-lcl/research/UAV_System_Design"
   - title: ADS
     url: "/ntou-lcl/research/ADS"
+  - title: FC_UAVs
+    url: "/ntou-lcl/research/FC-UAVs"
+  - title: RLC
+    url: "/ntou-lcl/research/RLC"
 ---
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
@@ -15,9 +19,9 @@ subcategories:
 ## Control of Multi-Agent System 多代理人系統控制
 
 {% capture text %}
-Cooperative Control of MAS  
+Cooperative Control of MAS
 
-Formation Control of UAVs  
+[Formation Control of UAVs](/ntou-lcl/research/FC_UAVs)
 
 [Multi-UAV System Design and Applications](/ntou-lcl/research/UAV_System_Design)
 
@@ -54,7 +58,7 @@ Autonomous Moving Robot (AMR)
 ## Rinforcement Learning Control and Its Applications 強化學習控制與應用
 
 {% capture text %}
-Reinforcement Learning Control  
+[Reinforcement Learning Control](/ntou-lcl/research/RLC)
 
 Actor-Critic Neural Network  
 
