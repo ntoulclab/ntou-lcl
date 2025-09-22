@@ -1,14 +1,7 @@
 ---
-title: FC_UAVs
-parent: Research
-subcategories:
-  - title: 大無人機編隊三角形
-    url: "/ntou-lcl/research/FC_UAVs/mas_triangle"
+title: 大無人機編隊三角形
+parent: FC_UAVs
 ---
 
-## Formation Control of UAVs
-<ul>
-  {% for subcategory in page.subcategories %}
-    <li><a href="{{ subcategory.url }}">{{ subcategory.title }}</a></li>
-  {% endfor %}
-</ul>
+## 大無人機編隊三角形
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/zyFEQGSS8So" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
