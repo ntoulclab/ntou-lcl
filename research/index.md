@@ -19,7 +19,7 @@ subcategories:
 ## Control of Multi-Agent System 多代理人系統控制
 
 {% capture text %}
-Cooperative Control of MAS
+[Cooperative Control of MAS](/ntou-lcl/research/MAS)
 
 [Formation Control of UAVs](/ntou-lcl/research/FC_UAVs)
 
