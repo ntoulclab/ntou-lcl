@@ -4,6 +4,8 @@ nav:
   order: 2
   tooltip: Research Areas
 subcategories:
+  - title: MAS
+    url: "/ntou-lcl/research/UAV_avoid"
   - title: UAV_System_Design
     url: "/ntou-lcl/research/UAV_System_Design"
   - title: ADS
