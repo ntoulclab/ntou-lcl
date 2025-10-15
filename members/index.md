@@ -53,11 +53,11 @@ Email: mingli@mail.ntou.edu.tw
 {% include image-grid.html %}
 <!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}​In-service Master Students
-{% assign images = "images/kwen.jpg|images/CY.jpg|images/JASON.jpg|images/fanyuang.jpg|liu.jpg" | split: "|" %}
+{% assign images = "images/kwen.jpg|images/CY.jpg|images/JASON.jpg|images/pengyuan.jpg|liu.jpg|pijung.jpg" | split: "|" %}
 
-{% assign names = "鍾文幀 WEN-ZHENG ZHONG|陳羿宏 YI-HONG CHEN|李至偉 ZHI-WEI LI|賴芃元 PENG-YUAN LAI" | split: "|" %}
+{% assign names = "鍾文幀 WEN-ZHENG ZHONG|陳羿宏 YI-HONG CHEN|李至偉 ZHI-WEI LI|賴芃元 PENG-YUAN LAI|劉宇澤 YU-TSE LIU|陳丕榮 PI-JUNG CHEN" | split: "|" %}
 
-{% assign emails = "kaitlyshawnrt@gmail.com|junesixteen25@gmail.com|j0988251682@gmail.com|01153121@email.ntou.edu.tw|ryan30124@gmail.com" | split: "|" %}
+{% assign emails = "kaitlyshawnrt@gmail.com|junesixteen25@gmail.com|j0988251682@gmail.com|01153121@email.ntou.edu.tw|ryan30124@gmail.com|nick01232b@gmail.com" | split: "|" %}
 {% include image-grid.html %}
 <!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}Undergraduate Students
