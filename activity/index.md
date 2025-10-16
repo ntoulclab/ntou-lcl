@@ -40,3 +40,14 @@ nav:
   image="images/banquet.jpg"
   style="font-size: 2em; width: 300%;"
 %}
+
+## 2025 10月 中秋晚會
+
+{% capture text %}
+
+{% endcapture %}
+{%
+  include feature.html
+  image="images/2025BBQ.jpg"
+  style="font-size: 2em; width: 300%;"
+%}
