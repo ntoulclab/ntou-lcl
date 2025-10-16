@@ -62,7 +62,7 @@ Email: mingli@mail.ntou.edu.tw
 <!-- section break -->
 # {% include icon.html icon="fa-solid fa-users" %}Undergraduate Students
 
-{% assign images = "images/yongyu.jpg|images/wen.jpg|images/pengyuan.jpg|liu.jpg|pijung.jpg" | split: "|" %}
+{% assign images = "images/yongyu.jpg|images/wen.jpg|images/pengyuan.jpg|images/liu.jpg|images/pijung.jpg" | split: "|" %}
 
 {% assign names = "莊詠瑜 YONG-YU ZHUANG|溫翔宇SIANG-YU WEN|賴芃元 PENG-YUAN LAI|劉宇澤 YU-TSE LIU|陳丕榮 PI-JUNG CHEN" | split: "|" %}
 
